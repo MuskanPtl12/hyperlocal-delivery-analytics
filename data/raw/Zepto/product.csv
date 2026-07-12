@@ -1,0 +1,1201 @@
+product_id,product_name,category,sub_category,price
+P00001,Daily Dishwash 1kg,Snacks & Branded Foods,Instant Food,250
+P00002,Quick Apple 500g,Fruits & Vegetables,Fresh Fruits,90
+P00003,Fresh Cashew 12 pcs,Personal Care,Skin Care,100
+P00004,Quick Toor Dal 500ml,Grocery & Staples,Dal & Pulses,300
+P00005,Fresh Chocolate 1L,Household,Disposables,180
+P00006,Fresh Tea 500ml,Beverages,Juices,130
+P00007,Quick Floor Cleaner 1L,Baby Care,Baby Food,610
+P00008,Pure Tomato 1L,Beverages,Energy Drinks,140
+P00009,Pure Banana 12 pcs,Personal Care,Oral Care,160
+P00010,Fresh Potato 200g,Beverages,Soft Drinks,90
+P00011,Pure Cashew 2kg,Fruits & Vegetables,Fresh Vegetables,100
+P00012,Good Cookies 200g,Snacks & Branded Foods,Biscuits & Cookies,250
+P00013,Quick Cold Drink 500g,Snacks & Branded Foods,Instant Food,160
+P00014,Daily Toor Dal 1kg,Grocery & Staples,Atta & Flour,370
+P00015,Happy Juice 500g,Snacks & Branded Foods,Chips & Namkeen,140
+P00016,Urban Eggs 1L,Dairy & Bakery,Milk,140
+P00017,Good Toothpaste 200g,Household,Disposables,220
+P00018,Happy Banana 12 pcs,Dairy & Bakery,Curd & Yogurt,220
+P00019,Good Curd 2kg,Fruits & Vegetables,Fresh Vegetables,260
+P00020,Pure Cookies 1kg,Personal Care,Oral Care,120
+P00021,Pure Eggs 200g,Dairy & Bakery,Breads,40
+P00022,Green Atta 500g,Baby Care,Baby Food,550
+P00023,Green Potato 1L,Household,Cleaning Supplies,240
+P00024,Urban Almonds 1L,Personal Care,Skin Care,390
+P00025,Fresh Bread 6 pcs,Dairy & Bakery,Milk,110
+P00026,Pure Tea 1L,Grocery & Staples,Dal & Pulses,200
+P00027,Metro Eggs 12 pcs,Dairy & Bakery,Cakes,290
+P00028,Pure Toor Dal 1kg,Personal Care,Oral Care,190
+P00029,Daily Chocolate 1L,Grocery & Staples,Atta & Flour,120
+P00030,Fresh Cold Drink 500g,Grocery & Staples,Dal & Pulses,250
+P00031,Smart Tea 500ml,Baby Care,Baby Food,220
+P00032,Daily Toothpaste 1kg,Fruits & Vegetables,Fresh Fruits,240
+P00033,Good Tomato 1kg,Grocery & Staples,Dal & Pulses,150
+P00034,Daily Juice 1L,Snacks & Branded Foods,Biscuits & Cookies,130
+P00035,Urban Almonds 2kg,Baby Care,Diapers,770
+P00036,Fresh Chocolate 12 pcs,Snacks & Branded Foods,Chips & Namkeen,70
+P00037,Good Eggs 500g,Baby Care,Diapers,450
+P00038,Green Dishwash 1L,Baby Care,Baby Food,250
+P00039,Metro Namkeen 1L,Personal Care,Hair Care,530
+P00040,Green Tea 1L,Personal Care,Oral Care,120
+P00041,Urban Potato 6 pcs,Dairy & Bakery,Milk,280
+P00042,Quick Dishwash 1kg,Dairy & Bakery,Curd & Yogurt,270
+P00043,Quick Floor Cleaner 500ml,Beverages,Soft Drinks,150
+P00044,Fresh Shampoo 500ml,Household,Disposables,270
+P00045,Smart Curd 200g,Dairy & Bakery,Paneer,180
+P00046,Good Potato 12 pcs,Household,Disposables,160
+P00047,Fresh Almonds 1L,Baby Care,Baby Skin Care,770
+P00048,Pure Banana 1L,Grocery & Staples,Atta & Flour,340
+P00049,Metro Atta 1L,Personal Care,Oral Care,540
+P00050,Pure Curd 2kg,Snacks & Branded Foods,Instant Food,130
+P00051,Pure Cookies 200g,Dairy & Bakery,Breads,190
+P00052,Quick Potato 1L,Personal Care,Deos & Perfumes,80
+P00053,Good Tomato 500ml,Fruits & Vegetables,Herbs,300
+P00054,Metro Curd 500ml,Snacks & Branded Foods,Biscuits & Cookies,170
+P00055,Urban Apple 1L,Grocery & Staples,Atta & Flour,60
+P00056,Green Potato 6 pcs,Beverages,Tea & Coffee,150
+P00057,Smart Almonds 500g,Dairy & Bakery,Milk,30
+P00058,Green Floor Cleaner 200g,Personal Care,Oral Care,400
+P00059,Fresh Eggs 1L,Dairy & Bakery,Breads,70
+P00060,Good Atta 6 pcs,Dairy & Bakery,Cakes,140
+P00061,Urban Coffee 500g,Household,Cleaning Supplies,190
+P00062,Metro Dishwash 12 pcs,Grocery & Staples,Dal & Pulses,580
+P00063,Metro Milk 500ml,Grocery & Staples,Dal & Pulses,160
+P00064,Good Toor Dal 2kg,Snacks & Branded Foods,Chips & Namkeen,40
+P00065,Daily Chocolate 200g,Snacks & Branded Foods,Instant Food,150
+P00066,Fresh Banana 12 pcs,Fruits & Vegetables,Herbs,150
+P00067,Happy Cookies 12 pcs,Grocery & Staples,Atta & Flour,480
+P00068,Pure Namkeen 12 pcs,Fruits & Vegetables,Herbs,280
+P00069,Pure Floor Cleaner 500ml,Household,Laundry,380
+P00070,Pure Milk 200g,Beverages,Soft Drinks,160
+P00071,Quick Toor Dal 1kg,Beverages,Juices,140
+P00072,Fresh Almonds 500ml,Dairy & Bakery,Cakes,40
+P00073,Green Potato 500ml,Dairy & Bakery,Curd & Yogurt,130
+P00074,Good Floor Cleaner 500ml,Dairy & Bakery,Breads,90
+P00075,Happy Apple 1L,Personal Care,Hair Care,450
+P00076,Metro Potato 1L,Grocery & Staples,Atta & Flour,340
+P00077,Fresh Basmati Rice 2kg,Household,Cleaning Supplies,110
+P00078,Smart Atta 500g,Beverages,Soft Drinks,230
+P00079,Quick Eggs 200g,Snacks & Branded Foods,Biscuits & Cookies,210
+P00080,Quick Curd 1L,Baby Care,Diapers,580
+P00081,Fresh Curd 500g,Personal Care,Oral Care,390
+P00082,Happy Juice 6 pcs,Fruits & Vegetables,Herbs,280
+P00083,Smart Eggs 6 pcs,Fruits & Vegetables,Fresh Vegetables,60
+P00084,Pure Dishwash 12 pcs,Dairy & Bakery,Curd & Yogurt,230
+P00085,Daily Toor Dal 200g,Grocery & Staples,Dal & Pulses,330
+P00086,Pure Tomato 500g,Grocery & Staples,Rice,160
+P00087,Urban Floor Cleaner 1L,Personal Care,Deos & Perfumes,570
+P00088,Metro Cashew 12 pcs,Dairy & Bakery,Curd & Yogurt,110
+P00089,Happy Dishwash 500g,Beverages,Soft Drinks,30
+P00090,Smart Curd 6 pcs,Beverages,Tea & Coffee,110
+P00091,Happy Banana 500ml,Beverages,Juices,70
+P00092,Quick Coffee 500g,Dairy & Bakery,Cakes,190
+P00093,Fresh Apple 500ml,Grocery & Staples,Atta & Flour,150
+P00094,Happy Toothpaste 6 pcs,Fruits & Vegetables,Fresh Fruits,240
+P00095,Smart Curd 1L,Household,Laundry,390
+P00096,Happy Bread 500ml,Baby Care,Baby Skin Care,180
+P00097,Quick Bread 500ml,Snacks & Branded Foods,Instant Food,60
+P00098,Smart Dishwash 500ml,Baby Care,Baby Skin Care,640
+P00099,Green Tomato 200g,Snacks & Branded Foods,Chips & Namkeen,170
+P00100,Quick Cookies 500g,Dairy & Bakery,Breads,80
+P00101,Pure Toor Dal 6 pcs,Baby Care,Diapers,470
+P00102,Quick Cold Drink 500g,Dairy & Bakery,Cakes,200
+P00103,Quick Chocolate 1kg,Household,Cleaning Supplies,200
+P00104,Urban Curd 1L,Dairy & Bakery,Milk,20
+P00105,Good Banana 200g,Baby Care,Diapers,520
+P00106,Good Floor Cleaner 1kg,Baby Care,Diapers,590
+P00107,Quick Curd 1kg,Snacks & Branded Foods,Instant Food,130
+P00108,Happy Cold Drink 2kg,Dairy & Bakery,Cakes,100
+P00109,Good Juice 500ml,Dairy & Bakery,Breads,130
+P00110,Green Shampoo 1L,Baby Care,Baby Food,500
+P00111,Daily Atta 500g,Beverages,Soft Drinks,240
+P00112,Smart Cookies 500g,Personal Care,Hair Care,590
+P00113,Green Curd 500g,Fruits & Vegetables,Fresh Vegetables,70
+P00114,Quick Floor Cleaner 6 pcs,Household,Disposables,180
+P00115,Smart Potato 1L,Snacks & Branded Foods,Chips & Namkeen,40
+P00116,Smart Apple 1L,Beverages,Energy Drinks,190
+P00117,Happy Atta 2kg,Dairy & Bakery,Paneer,40
+P00118,Daily Basmati Rice 500g,Household,Disposables,400
+P00119,Urban Dishwash 200g,Beverages,Juices,220
+P00120,Quick Almonds 500ml,Beverages,Soft Drinks,50
+P00121,Happy Curd 12 pcs,Snacks & Branded Foods,Chips & Namkeen,240
+P00122,Metro Cold Drink 500g,Personal Care,Oral Care,600
+P00123,Good Atta 500g,Baby Care,Diapers,380
+P00124,Happy Eggs 1L,Dairy & Bakery,Cakes,150
+P00125,Green Toor Dal 6 pcs,Fruits & Vegetables,Fresh Vegetables,130
+P00126,Daily Toothpaste 1kg,Personal Care,Oral Care,480
+P00127,Smart Toor Dal 2kg,Household,Laundry,200
+P00128,Daily Bread 12 pcs,Fruits & Vegetables,Fresh Vegetables,280
+P00129,Smart Coffee 500ml,Snacks & Branded Foods,Chips & Namkeen,100
+P00130,Pure Chocolate 1L,Fruits & Vegetables,Herbs,40
+P00131,Daily Namkeen 200g,Dairy & Bakery,Paneer,240
+P00132,Fresh Floor Cleaner 1L,Dairy & Bakery,Milk,220
+P00133,Smart Atta 12 pcs,Grocery & Staples,Dal & Pulses,470
+P00134,Daily Chocolate 200g,Household,Disposables,350
+P00135,Quick Tea 6 pcs,Baby Care,Baby Skin Care,330
+P00136,Daily Almonds 12 pcs,Fruits & Vegetables,Fresh Fruits,30
+P00137,Daily Milk 12 pcs,Baby Care,Baby Skin Care,740
+P00138,Happy Toor Dal 6 pcs,Fruits & Vegetables,Fresh Vegetables,270
+P00139,Fresh Juice 6 pcs,Household,Laundry,190
+P00140,Pure Namkeen 1kg,Personal Care,Skin Care,60
+P00141,Quick Curd 12 pcs,Personal Care,Hair Care,390
+P00142,Metro Bread 500g,Grocery & Staples,Atta & Flour,420
+P00143,Quick Tea 1L,Grocery & Staples,Dry Fruits,100
+P00144,Pure Juice 12 pcs,Fruits & Vegetables,Fresh Fruits,300
+P00145,Urban Floor Cleaner 200g,Baby Care,Diapers,490
+P00146,Urban Coffee 6 pcs,Personal Care,Skin Care,530
+P00147,Happy Juice 500g,Baby Care,Baby Food,590
+P00148,Metro Bread 200g,Household,Disposables,90
+P00149,Urban Apple 6 pcs,Fruits & Vegetables,Fresh Fruits,180
+P00150,Green Curd 12 pcs,Household,Disposables,70
+P00151,Happy Atta 200g,Beverages,Energy Drinks,50
+P00152,Daily Cold Drink 1kg,Dairy & Bakery,Paneer,70
+P00153,Smart Potato 12 pcs,Dairy & Bakery,Milk,250
+P00154,Good Namkeen 500g,Beverages,Soft Drinks,230
+P00155,Fresh Tomato 200g,Baby Care,Baby Food,500
+P00156,Pure Cashew 1kg,Snacks & Branded Foods,Instant Food,50
+P00157,Happy Shampoo 1kg,Personal Care,Hair Care,120
+P00158,Good Apple 12 pcs,Grocery & Staples,Dal & Pulses,120
+P00159,Pure Eggs 12 pcs,Snacks & Branded Foods,Chips & Namkeen,100
+P00160,Fresh Curd 12 pcs,Dairy & Bakery,Cakes,80
+P00161,Happy Milk 2kg,Grocery & Staples,Rice,310
+P00162,Fresh Floor Cleaner 2kg,Dairy & Bakery,Paneer,20
+P00163,Smart Tea 500ml,Household,Disposables,230
+P00164,Urban Tea 6 pcs,Baby Care,Diapers,440
+P00165,Happy Cookies 500g,Dairy & Bakery,Curd & Yogurt,270
+P00166,Good Toothpaste 200g,Fruits & Vegetables,Fresh Vegetables,30
+P00167,Fresh Apple 1kg,Baby Care,Diapers,790
+P00168,Happy Atta 12 pcs,Baby Care,Baby Skin Care,430
+P00169,Smart Cookies 500ml,Fruits & Vegetables,Fresh Vegetables,210
+P00170,Good Toor Dal 200g,Dairy & Bakery,Paneer,280
+P00171,Green Banana 1kg,Snacks & Branded Foods,Instant Food,40
+P00172,Happy Cold Drink 500ml,Beverages,Tea & Coffee,210
+P00173,Metro Juice 500ml,Grocery & Staples,Rice,130
+P00174,Daily Chocolate 500g,Grocery & Staples,Rice,570
+P00175,Urban Banana 200g,Grocery & Staples,Rice,550
+P00176,Quick Namkeen 2kg,Fruits & Vegetables,Fresh Vegetables,270
+P00177,Metro Atta 1kg,Personal Care,Oral Care,560
+P00178,Quick Curd 500g,Personal Care,Deos & Perfumes,380
+P00179,Quick Namkeen 500ml,Baby Care,Baby Food,390
+P00180,Quick Cashew 1kg,Baby Care,Baby Food,230
+P00181,Smart Milk 200g,Household,Laundry,150
+P00182,Daily Chocolate 12 pcs,Dairy & Bakery,Breads,100
+P00183,Quick Namkeen 500ml,Household,Laundry,370
+P00184,Daily Cashew 500ml,Household,Laundry,160
+P00185,Pure Juice 200g,Fruits & Vegetables,Fresh Fruits,250
+P00186,Urban Chocolate 500g,Snacks & Branded Foods,Instant Food,210
+P00187,Pure Basmati Rice 12 pcs,Fruits & Vegetables,Fresh Fruits,130
+P00188,Green Eggs 1kg,Fruits & Vegetables,Fresh Fruits,130
+P00189,Pure Namkeen 500ml,Snacks & Branded Foods,Chips & Namkeen,130
+P00190,Fresh Eggs 2kg,Grocery & Staples,Rice,90
+P00191,Fresh Tea 1kg,Dairy & Bakery,Milk,100
+P00192,Green Curd 500ml,Beverages,Juices,30
+P00193,Quick Chocolate 6 pcs,Personal Care,Deos & Perfumes,210
+P00194,Daily Chocolate 12 pcs,Household,Disposables,100
+P00195,Smart Dishwash 2kg,Dairy & Bakery,Breads,40
+P00196,Pure Basmati Rice 500ml,Baby Care,Diapers,290
+P00197,Good Toothpaste 500ml,Snacks & Branded Foods,Chips & Namkeen,230
+P00198,Daily Tea 500g,Personal Care,Deos & Perfumes,420
+P00199,Urban Chocolate 1kg,Baby Care,Diapers,700
+P00200,Smart Toor Dal 500g,Fruits & Vegetables,Fresh Vegetables,100
+P00201,Quick Toor Dal 2kg,Baby Care,Baby Skin Care,780
+P00202,Green Cashew 200g,Household,Laundry,220
+P00203,Green Bread 1kg,Beverages,Juices,130
+P00204,Smart Bread 12 pcs,Beverages,Energy Drinks,40
+P00205,Smart Cashew 1kg,Dairy & Bakery,Cakes,110
+P00206,Pure Cookies 500ml,Baby Care,Diapers,130
+P00207,Quick Chocolate 1L,Grocery & Staples,Dal & Pulses,500
+P00208,Urban Potato 500ml,Dairy & Bakery,Milk,240
+P00209,Urban Shampoo 6 pcs,Personal Care,Deos & Perfumes,170
+P00210,Quick Basmati Rice 500g,Baby Care,Diapers,200
+P00211,Good Potato 1L,Grocery & Staples,Dry Fruits,560
+P00212,Green Coffee 12 pcs,Baby Care,Baby Food,530
+P00213,Pure Toothpaste 1L,Baby Care,Baby Food,390
+P00214,Pure Dishwash 6 pcs,Household,Disposables,180
+P00215,Green Chocolate 500g,Baby Care,Baby Food,250
+P00216,Green Cookies 500ml,Fruits & Vegetables,Fresh Vegetables,270
+P00217,Urban Cashew 1kg,Beverages,Juices,50
+P00218,Good Chocolate 1kg,Dairy & Bakery,Paneer,260
+P00219,Smart Almonds 500ml,Dairy & Bakery,Paneer,130
+P00220,Urban Tea 2kg,Grocery & Staples,Atta & Flour,220
+P00221,Metro Floor Cleaner 500g,Grocery & Staples,Atta & Flour,470
+P00222,Metro Toor Dal 500ml,Beverages,Tea & Coffee,120
+P00223,Green Juice 500g,Grocery & Staples,Dal & Pulses,350
+P00224,Pure Curd 2kg,Beverages,Tea & Coffee,170
+P00225,Metro Toothpaste 2kg,Grocery & Staples,Atta & Flour,470
+P00226,Quick Basmati Rice 12 pcs,Fruits & Vegetables,Fresh Fruits,120
+P00227,Good Milk 500ml,Personal Care,Skin Care,550
+P00228,Good Shampoo 500ml,Personal Care,Skin Care,70
+P00229,Smart Chocolate 200g,Dairy & Bakery,Curd & Yogurt,210
+P00230,Fresh Banana 500g,Personal Care,Oral Care,130
+P00231,Metro Tea 1L,Fruits & Vegetables,Fresh Vegetables,180
+P00232,Urban Toor Dal 12 pcs,Personal Care,Hair Care,110
+P00233,Metro Banana 6 pcs,Household,Laundry,330
+P00234,Daily Almonds 12 pcs,Fruits & Vegetables,Herbs,230
+P00235,Quick Basmati Rice 2kg,Beverages,Juices,60
+P00236,Quick Banana 6 pcs,Personal Care,Hair Care,90
+P00237,Green Almonds 12 pcs,Dairy & Bakery,Paneer,180
+P00238,Pure Milk 500g,Fruits & Vegetables,Herbs,110
+P00239,Daily Bread 6 pcs,Fruits & Vegetables,Fresh Fruits,170
+P00240,Daily Almonds 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,70
+P00241,Daily Curd 2kg,Grocery & Staples,Rice,350
+P00242,Fresh Banana 1L,Dairy & Bakery,Paneer,110
+P00243,Good Toor Dal 2kg,Household,Laundry,280
+P00244,Good Toor Dal 1kg,Snacks & Branded Foods,Chips & Namkeen,90
+P00245,Pure Chocolate 6 pcs,Dairy & Bakery,Breads,60
+P00246,Pure Apple 500g,Fruits & Vegetables,Fresh Fruits,110
+P00247,Fresh Eggs 200g,Dairy & Bakery,Paneer,40
+P00248,Daily Chocolate 1kg,Dairy & Bakery,Breads,20
+P00249,Quick Bread 500ml,Dairy & Bakery,Cakes,280
+P00250,Green Banana 6 pcs,Personal Care,Hair Care,550
+P00251,Urban Floor Cleaner 500g,Grocery & Staples,Dry Fruits,560
+P00252,Good Banana 2kg,Beverages,Energy Drinks,240
+P00253,Happy Curd 500g,Dairy & Bakery,Milk,160
+P00254,Metro Eggs 1L,Grocery & Staples,Dry Fruits,340
+P00255,Urban Floor Cleaner 2kg,Personal Care,Oral Care,330
+P00256,Smart Banana 1L,Household,Cleaning Supplies,320
+P00257,Fresh Milk 200g,Baby Care,Baby Skin Care,440
+P00258,Green Basmati Rice 12 pcs,Beverages,Soft Drinks,220
+P00259,Metro Eggs 2kg,Dairy & Bakery,Cakes,130
+P00260,Good Almonds 2kg,Household,Laundry,310
+P00261,Smart Chocolate 6 pcs,Household,Disposables,130
+P00262,Urban Dishwash 200g,Baby Care,Baby Food,180
+P00263,Daily Bread 2kg,Fruits & Vegetables,Fresh Fruits,260
+P00264,Green Potato 500ml,Personal Care,Hair Care,140
+P00265,Quick Cookies 1kg,Baby Care,Diapers,740
+P00266,Pure Curd 6 pcs,Fruits & Vegetables,Fresh Vegetables,20
+P00267,Quick Juice 12 pcs,Grocery & Staples,Rice,200
+P00268,Fresh Eggs 500ml,Baby Care,Baby Food,480
+P00269,Metro Dishwash 1kg,Beverages,Juices,170
+P00270,Urban Cashew 2kg,Snacks & Branded Foods,Biscuits & Cookies,220
+P00271,Quick Floor Cleaner 500ml,Grocery & Staples,Dry Fruits,170
+P00272,Green Eggs 200g,Beverages,Juices,120
+P00273,Good Namkeen 1kg,Snacks & Branded Foods,Biscuits & Cookies,70
+P00274,Smart Tea 500ml,Fruits & Vegetables,Herbs,150
+P00275,Metro Tomato 1L,Baby Care,Baby Food,390
+P00276,Daily Cold Drink 6 pcs,Grocery & Staples,Rice,330
+P00277,Green Apple 12 pcs,Household,Laundry,260
+P00278,Daily Cold Drink 1kg,Dairy & Bakery,Cakes,190
+P00279,Metro Bread 1kg,Household,Laundry,210
+P00280,Metro Coffee 500g,Fruits & Vegetables,Herbs,290
+P00281,Green Tomato 500g,Fruits & Vegetables,Herbs,250
+P00282,Urban Bread 12 pcs,Beverages,Tea & Coffee,130
+P00283,Quick Floor Cleaner 500ml,Fruits & Vegetables,Fresh Fruits,260
+P00284,Urban Toothpaste 200g,Grocery & Staples,Atta & Flour,360
+P00285,Green Eggs 500g,Beverages,Soft Drinks,130
+P00286,Quick Namkeen 1kg,Snacks & Branded Foods,Biscuits & Cookies,180
+P00287,Smart Toothpaste 500g,Dairy & Bakery,Paneer,200
+P00288,Metro Milk 500g,Grocery & Staples,Dal & Pulses,590
+P00289,Smart Almonds 12 pcs,Personal Care,Skin Care,550
+P00290,Metro Shampoo 2kg,Dairy & Bakery,Breads,130
+P00291,Good Dishwash 200g,Fruits & Vegetables,Herbs,100
+P00292,Good Toothpaste 500g,Grocery & Staples,Rice,410
+P00293,Fresh Eggs 1kg,Snacks & Branded Foods,Biscuits & Cookies,50
+P00294,Good Curd 500g,Snacks & Branded Foods,Chips & Namkeen,200
+P00295,Metro Toor Dal 6 pcs,Baby Care,Baby Skin Care,540
+P00296,Smart Tomato 200g,Dairy & Bakery,Paneer,120
+P00297,Good Curd 500g,Baby Care,Diapers,650
+P00298,Smart Apple 1kg,Personal Care,Oral Care,390
+P00299,Smart Curd 500ml,Baby Care,Diapers,350
+P00300,Urban Cashew 1kg,Personal Care,Oral Care,510
+P00301,Quick Cookies 12 pcs,Personal Care,Oral Care,560
+P00302,Green Floor Cleaner 6 pcs,Fruits & Vegetables,Fresh Fruits,150
+P00303,Good Toothpaste 200g,Beverages,Energy Drinks,220
+P00304,Good Cashew 2kg,Household,Disposables,60
+P00305,Daily Coffee 1L,Fruits & Vegetables,Fresh Vegetables,290
+P00306,Pure Banana 1kg,Personal Care,Deos & Perfumes,380
+P00307,Pure Shampoo 1kg,Personal Care,Skin Care,90
+P00308,Happy Tomato 6 pcs,Personal Care,Deos & Perfumes,160
+P00309,Fresh Potato 200g,Dairy & Bakery,Breads,80
+P00310,Quick Shampoo 200g,Household,Cleaning Supplies,90
+P00311,Happy Milk 500ml,Baby Care,Diapers,740
+P00312,Good Toor Dal 6 pcs,Grocery & Staples,Dal & Pulses,230
+P00313,Smart Floor Cleaner 12 pcs,Personal Care,Hair Care,260
+P00314,Smart Toothpaste 500ml,Fruits & Vegetables,Fresh Vegetables,270
+P00315,Good Bread 500g,Grocery & Staples,Atta & Flour,50
+P00316,Quick Toothpaste 200g,Personal Care,Hair Care,510
+P00317,Happy Toor Dal 500ml,Personal Care,Skin Care,420
+P00318,Metro Atta 200g,Baby Care,Baby Food,520
+P00319,Urban Juice 500ml,Grocery & Staples,Dry Fruits,80
+P00320,Daily Cold Drink 1kg,Baby Care,Baby Skin Care,580
+P00321,Pure Almonds 500g,Beverages,Energy Drinks,100
+P00322,Smart Tomato 200g,Personal Care,Oral Care,490
+P00323,Smart Basmati Rice 500g,Baby Care,Baby Skin Care,350
+P00324,Good Atta 2kg,Fruits & Vegetables,Fresh Fruits,190
+P00325,Daily Shampoo 1L,Beverages,Soft Drinks,170
+P00326,Smart Cashew 2kg,Fruits & Vegetables,Fresh Vegetables,90
+P00327,Fresh Juice 12 pcs,Grocery & Staples,Dry Fruits,480
+P00328,Pure Eggs 12 pcs,Beverages,Tea & Coffee,30
+P00329,Fresh Shampoo 200g,Grocery & Staples,Dry Fruits,560
+P00330,Urban Atta 1L,Grocery & Staples,Dry Fruits,100
+P00331,Quick Cookies 500ml,Beverages,Juices,30
+P00332,Urban Cookies 500ml,Fruits & Vegetables,Herbs,30
+P00333,Good Floor Cleaner 2kg,Grocery & Staples,Dal & Pulses,230
+P00334,Good Cookies 1kg,Fruits & Vegetables,Fresh Vegetables,260
+P00335,Metro Juice 1L,Household,Cleaning Supplies,100
+P00336,Daily Potato 500ml,Dairy & Bakery,Milk,40
+P00337,Pure Cookies 1kg,Fruits & Vegetables,Fresh Fruits,260
+P00338,Quick Chocolate 2kg,Household,Laundry,160
+P00339,Good Namkeen 2kg,Snacks & Branded Foods,Biscuits & Cookies,220
+P00340,Quick Milk 6 pcs,Household,Disposables,50
+P00341,Urban Milk 6 pcs,Household,Disposables,220
+P00342,Fresh Coffee 2kg,Dairy & Bakery,Breads,270
+P00343,Green Juice 6 pcs,Personal Care,Deos & Perfumes,230
+P00344,Good Coffee 500ml,Fruits & Vegetables,Fresh Fruits,260
+P00345,Good Atta 12 pcs,Dairy & Bakery,Cakes,200
+P00346,Happy Floor Cleaner 500ml,Dairy & Bakery,Paneer,90
+P00347,Good Basmati Rice 12 pcs,Grocery & Staples,Rice,500
+P00348,Urban Cold Drink 6 pcs,Baby Care,Diapers,680
+P00349,Quick Shampoo 200g,Grocery & Staples,Rice,510
+P00350,Good Toothpaste 6 pcs,Fruits & Vegetables,Herbs,250
+P00351,Quick Toor Dal 500g,Fruits & Vegetables,Fresh Fruits,210
+P00352,Quick Basmati Rice 500g,Beverages,Tea & Coffee,50
+P00353,Fresh Floor Cleaner 500ml,Dairy & Bakery,Breads,100
+P00354,Metro Potato 1kg,Dairy & Bakery,Paneer,120
+P00355,Daily Chocolate 500g,Baby Care,Diapers,490
+P00356,Daily Atta 500ml,Personal Care,Skin Care,250
+P00357,Metro Floor Cleaner 1kg,Snacks & Branded Foods,Biscuits & Cookies,40
+P00358,Daily Bread 6 pcs,Personal Care,Oral Care,140
+P00359,Fresh Namkeen 12 pcs,Grocery & Staples,Atta & Flour,400
+P00360,Urban Potato 12 pcs,Dairy & Bakery,Milk,270
+P00361,Smart Floor Cleaner 1L,Snacks & Branded Foods,Chips & Namkeen,90
+P00362,Good Toor Dal 500ml,Household,Disposables,240
+P00363,Quick Namkeen 500g,Personal Care,Oral Care,450
+P00364,Smart Toothpaste 6 pcs,Baby Care,Diapers,700
+P00365,Green Cookies 200g,Fruits & Vegetables,Herbs,90
+P00366,Good Toor Dal 500g,Baby Care,Baby Food,110
+P00367,Good Toothpaste 1L,Snacks & Branded Foods,Biscuits & Cookies,220
+P00368,Metro Namkeen 1L,Beverages,Juices,60
+P00369,Urban Tea 500ml,Personal Care,Skin Care,70
+P00370,Urban Shampoo 12 pcs,Grocery & Staples,Dry Fruits,120
+P00371,Quick Namkeen 500g,Baby Care,Baby Skin Care,170
+P00372,Fresh Toothpaste 6 pcs,Snacks & Branded Foods,Chips & Namkeen,220
+P00373,Green Curd 1L,Grocery & Staples,Dal & Pulses,340
+P00374,Urban Cashew 1L,Baby Care,Diapers,260
+P00375,Pure Tea 6 pcs,Baby Care,Baby Food,430
+P00376,Metro Tomato 6 pcs,Beverages,Juices,110
+P00377,Smart Namkeen 12 pcs,Baby Care,Diapers,250
+P00378,Good Namkeen 200g,Baby Care,Diapers,350
+P00379,Daily Eggs 6 pcs,Fruits & Vegetables,Fresh Fruits,70
+P00380,Pure Floor Cleaner 1kg,Household,Disposables,210
+P00381,Quick Tea 200g,Dairy & Bakery,Curd & Yogurt,200
+P00382,Pure Namkeen 1L,Dairy & Bakery,Curd & Yogurt,230
+P00383,Pure Atta 6 pcs,Dairy & Bakery,Paneer,300
+P00384,Smart Toor Dal 500g,Personal Care,Hair Care,420
+P00385,Fresh Tomato 500ml,Beverages,Juices,60
+P00386,Metro Banana 500ml,Baby Care,Baby Skin Care,770
+P00387,Urban Curd 200g,Personal Care,Deos & Perfumes,210
+P00388,Urban Atta 500ml,Household,Cleaning Supplies,290
+P00389,Pure Banana 500g,Dairy & Bakery,Milk,140
+P00390,Daily Dishwash 200g,Household,Laundry,60
+P00391,Happy Tea 200g,Beverages,Juices,90
+P00392,Smart Almonds 1kg,Baby Care,Baby Food,620
+P00393,Pure Atta 1L,Grocery & Staples,Dry Fruits,530
+P00394,Pure Tea 200g,Grocery & Staples,Dal & Pulses,460
+P00395,Happy Basmati Rice 200g,Fruits & Vegetables,Herbs,140
+P00396,Smart Basmati Rice 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,100
+P00397,Happy Cashew 1kg,Grocery & Staples,Dry Fruits,260
+P00398,Happy Potato 500ml,Household,Laundry,260
+P00399,Daily Cookies 1L,Household,Cleaning Supplies,300
+P00400,Quick Milk 500ml,Grocery & Staples,Dal & Pulses,370
+P00401,Metro Toor Dal 6 pcs,Dairy & Bakery,Breads,270
+P00402,Smart Toothpaste 500g,Snacks & Branded Foods,Chips & Namkeen,190
+P00403,Pure Toor Dal 12 pcs,Personal Care,Hair Care,120
+P00404,Fresh Juice 6 pcs,Household,Laundry,220
+P00405,Fresh Toor Dal 6 pcs,Baby Care,Diapers,280
+P00406,Happy Toor Dal 2kg,Personal Care,Oral Care,170
+P00407,Green Chocolate 6 pcs,Personal Care,Skin Care,160
+P00408,Fresh Basmati Rice 500ml,Fruits & Vegetables,Fresh Fruits,210
+P00409,Smart Curd 6 pcs,Beverages,Tea & Coffee,150
+P00410,Green Juice 2kg,Personal Care,Hair Care,50
+P00411,Happy Chocolate 6 pcs,Fruits & Vegetables,Herbs,70
+P00412,Urban Shampoo 6 pcs,Dairy & Bakery,Milk,50
+P00413,Pure Juice 500g,Fruits & Vegetables,Fresh Fruits,180
+P00414,Daily Floor Cleaner 2kg,Fruits & Vegetables,Fresh Vegetables,220
+P00415,Good Shampoo 6 pcs,Household,Laundry,320
+P00416,Fresh Juice 500g,Dairy & Bakery,Paneer,170
+P00417,Metro Basmati Rice 2kg,Baby Care,Baby Skin Care,670
+P00418,Pure Cold Drink 500g,Dairy & Bakery,Curd & Yogurt,70
+P00419,Smart Juice 6 pcs,Fruits & Vegetables,Fresh Vegetables,270
+P00420,Urban Toor Dal 1L,Fruits & Vegetables,Fresh Fruits,250
+P00421,Smart Toor Dal 2kg,Snacks & Branded Foods,Chips & Namkeen,200
+P00422,Good Atta 200g,Beverages,Tea & Coffee,180
+P00423,Smart Floor Cleaner 12 pcs,Grocery & Staples,Rice,380
+P00424,Good Toothpaste 12 pcs,Personal Care,Deos & Perfumes,250
+P00425,Fresh Namkeen 500ml,Dairy & Bakery,Milk,120
+P00426,Smart Milk 500ml,Grocery & Staples,Dry Fruits,460
+P00427,Pure Tomato 500ml,Beverages,Tea & Coffee,180
+P00428,Fresh Tea 500ml,Beverages,Juices,190
+P00429,Smart Curd 1L,Personal Care,Hair Care,210
+P00430,Smart Floor Cleaner 1L,Dairy & Bakery,Curd & Yogurt,300
+P00431,Daily Potato 6 pcs,Fruits & Vegetables,Fresh Vegetables,230
+P00432,Metro Floor Cleaner 6 pcs,Snacks & Branded Foods,Biscuits & Cookies,220
+P00433,Good Cold Drink 2kg,Beverages,Juices,30
+P00434,Good Almonds 500g,Household,Cleaning Supplies,80
+P00435,Smart Banana 6 pcs,Beverages,Tea & Coffee,130
+P00436,Daily Banana 1L,Grocery & Staples,Rice,450
+P00437,Smart Toor Dal 500g,Snacks & Branded Foods,Instant Food,40
+P00438,Fresh Floor Cleaner 12 pcs,Grocery & Staples,Rice,370
+P00439,Good Basmati Rice 500g,Beverages,Juices,70
+P00440,Green Namkeen 6 pcs,Fruits & Vegetables,Herbs,250
+P00441,Fresh Floor Cleaner 1kg,Grocery & Staples,Rice,360
+P00442,Quick Cold Drink 500g,Household,Disposables,240
+P00443,Good Milk 6 pcs,Dairy & Bakery,Curd & Yogurt,70
+P00444,Quick Chocolate 200g,Beverages,Energy Drinks,110
+P00445,Green Shampoo 200g,Baby Care,Baby Food,420
+P00446,Fresh Apple 500ml,Baby Care,Baby Skin Care,300
+P00447,Smart Banana 1L,Dairy & Bakery,Paneer,280
+P00448,Quick Tomato 200g,Household,Laundry,290
+P00449,Happy Atta 1kg,Snacks & Branded Foods,Instant Food,150
+P00450,Urban Cashew 1kg,Baby Care,Baby Food,750
+P00451,Green Namkeen 200g,Dairy & Bakery,Cakes,50
+P00452,Quick Tea 2kg,Baby Care,Baby Food,680
+P00453,Metro Coffee 6 pcs,Beverages,Soft Drinks,110
+P00454,Quick Cookies 500g,Household,Laundry,140
+P00455,Quick Tomato 1L,Beverages,Energy Drinks,240
+P00456,Pure Toothpaste 2kg,Personal Care,Hair Care,410
+P00457,Good Banana 500ml,Snacks & Branded Foods,Biscuits & Cookies,100
+P00458,Quick Juice 500g,Baby Care,Diapers,150
+P00459,Green Eggs 6 pcs,Baby Care,Baby Food,660
+P00460,Pure Eggs 1L,Dairy & Bakery,Paneer,170
+P00461,Fresh Floor Cleaner 1L,Dairy & Bakery,Cakes,150
+P00462,Fresh Eggs 500g,Grocery & Staples,Dry Fruits,100
+P00463,Smart Juice 2kg,Grocery & Staples,Rice,500
+P00464,Fresh Eggs 1L,Personal Care,Deos & Perfumes,340
+P00465,Smart Tea 1L,Personal Care,Hair Care,60
+P00466,Good Shampoo 200g,Dairy & Bakery,Paneer,240
+P00467,Quick Bread 6 pcs,Dairy & Bakery,Cakes,220
+P00468,Daily Dishwash 500ml,Fruits & Vegetables,Herbs,110
+P00469,Pure Floor Cleaner 1kg,Personal Care,Deos & Perfumes,290
+P00470,Green Chocolate 200g,Beverages,Tea & Coffee,170
+P00471,Fresh Potato 6 pcs,Baby Care,Diapers,350
+P00472,Happy Tomato 6 pcs,Grocery & Staples,Dry Fruits,290
+P00473,Good Bread 200g,Dairy & Bakery,Curd & Yogurt,180
+P00474,Metro Milk 1L,Baby Care,Diapers,650
+P00475,Good Banana 2kg,Fruits & Vegetables,Herbs,250
+P00476,Daily Dishwash 1kg,Dairy & Bakery,Curd & Yogurt,290
+P00477,Urban Coffee 6 pcs,Baby Care,Baby Skin Care,590
+P00478,Quick Curd 2kg,Fruits & Vegetables,Herbs,230
+P00479,Pure Almonds 200g,Grocery & Staples,Rice,120
+P00480,Pure Banana 1kg,Personal Care,Hair Care,160
+P00481,Happy Chocolate 1L,Fruits & Vegetables,Fresh Fruits,150
+P00482,Smart Basmati Rice 1L,Dairy & Bakery,Breads,250
+P00483,Daily Toor Dal 6 pcs,Snacks & Branded Foods,Chips & Namkeen,110
+P00484,Smart Eggs 2kg,Snacks & Branded Foods,Biscuits & Cookies,190
+P00485,Quick Namkeen 500g,Grocery & Staples,Atta & Flour,210
+P00486,Happy Cookies 500ml,Baby Care,Baby Skin Care,180
+P00487,Smart Toothpaste 500g,Fruits & Vegetables,Herbs,200
+P00488,Daily Tea 500ml,Fruits & Vegetables,Fresh Fruits,170
+P00489,Pure Chocolate 2kg,Snacks & Branded Foods,Biscuits & Cookies,80
+P00490,Good Curd 12 pcs,Dairy & Bakery,Breads,230
+P00491,Quick Banana 1L,Household,Disposables,400
+P00492,Happy Bread 1L,Baby Care,Diapers,420
+P00493,Smart Toothpaste 500ml,Dairy & Bakery,Breads,280
+P00494,Good Almonds 200g,Baby Care,Baby Skin Care,410
+P00495,Good Shampoo 12 pcs,Snacks & Branded Foods,Chips & Namkeen,140
+P00496,Daily Milk 1L,Snacks & Branded Foods,Instant Food,80
+P00497,Happy Potato 12 pcs,Snacks & Branded Foods,Chips & Namkeen,120
+P00498,Daily Tomato 1L,Grocery & Staples,Dal & Pulses,550
+P00499,Good Eggs 500ml,Household,Cleaning Supplies,110
+P00500,Green Basmati Rice 6 pcs,Beverages,Energy Drinks,80
+P00501,Metro Milk 500ml,Baby Care,Baby Food,600
+P00502,Fresh Bread 1kg,Dairy & Bakery,Milk,40
+P00503,Green Chocolate 1L,Grocery & Staples,Dry Fruits,300
+P00504,Green Eggs 6 pcs,Grocery & Staples,Atta & Flour,550
+P00505,Happy Tea 2kg,Household,Disposables,340
+P00506,Quick Juice 2kg,Snacks & Branded Foods,Biscuits & Cookies,110
+P00507,Green Floor Cleaner 200g,Grocery & Staples,Dry Fruits,440
+P00508,Quick Coffee 1kg,Baby Care,Baby Skin Care,670
+P00509,Green Floor Cleaner 2kg,Baby Care,Baby Skin Care,760
+P00510,Fresh Almonds 2kg,Beverages,Soft Drinks,120
+P00511,Fresh Floor Cleaner 2kg,Snacks & Branded Foods,Biscuits & Cookies,40
+P00512,Pure Tomato 6 pcs,Personal Care,Hair Care,310
+P00513,Pure Chocolate 2kg,Dairy & Bakery,Paneer,220
+P00514,Metro Atta 1L,Snacks & Branded Foods,Chips & Namkeen,90
+P00515,Quick Floor Cleaner 500ml,Household,Laundry,220
+P00516,Green Milk 500ml,Grocery & Staples,Dal & Pulses,310
+P00517,Fresh Cashew 1kg,Snacks & Branded Foods,Chips & Namkeen,70
+P00518,Daily Bread 1kg,Beverages,Tea & Coffee,220
+P00519,Quick Juice 200g,Dairy & Bakery,Curd & Yogurt,240
+P00520,Smart Juice 500ml,Beverages,Tea & Coffee,160
+P00521,Green Eggs 6 pcs,Dairy & Bakery,Milk,110
+P00522,Good Cold Drink 12 pcs,Beverages,Energy Drinks,100
+P00523,Smart Atta 12 pcs,Fruits & Vegetables,Fresh Fruits,60
+P00524,Metro Eggs 200g,Personal Care,Skin Care,150
+P00525,Urban Dishwash 200g,Snacks & Branded Foods,Chips & Namkeen,70
+P00526,Good Toothpaste 200g,Fruits & Vegetables,Fresh Fruits,40
+P00527,Green Juice 6 pcs,Dairy & Bakery,Milk,100
+P00528,Good Namkeen 1L,Snacks & Branded Foods,Instant Food,100
+P00529,Green Banana 1kg,Grocery & Staples,Dry Fruits,480
+P00530,Quick Cashew 1kg,Grocery & Staples,Atta & Flour,490
+P00531,Green Almonds 2kg,Dairy & Bakery,Paneer,30
+P00532,Fresh Floor Cleaner 1L,Household,Cleaning Supplies,150
+P00533,Urban Almonds 2kg,Baby Care,Diapers,390
+P00534,Urban Almonds 1L,Grocery & Staples,Dry Fruits,510
+P00535,Smart Apple 1kg,Fruits & Vegetables,Herbs,100
+P00536,Green Curd 200g,Beverages,Juices,50
+P00537,Smart Banana 1kg,Snacks & Branded Foods,Chips & Namkeen,190
+P00538,Green Tea 1kg,Fruits & Vegetables,Fresh Fruits,280
+P00539,Urban Apple 12 pcs,Personal Care,Skin Care,180
+P00540,Smart Almonds 500ml,Grocery & Staples,Rice,480
+P00541,Daily Basmati Rice 500g,Fruits & Vegetables,Fresh Vegetables,190
+P00542,Smart Toor Dal 200g,Personal Care,Hair Care,230
+P00543,Urban Juice 1kg,Baby Care,Baby Skin Care,670
+P00544,Good Cold Drink 1L,Fruits & Vegetables,Fresh Vegetables,260
+P00545,Green Tea 12 pcs,Dairy & Bakery,Milk,280
+P00546,Pure Potato 200g,Fruits & Vegetables,Fresh Vegetables,210
+P00547,Metro Tomato 2kg,Fruits & Vegetables,Fresh Fruits,220
+P00548,Happy Basmati Rice 500g,Household,Disposables,280
+P00549,Urban Juice 1kg,Fruits & Vegetables,Fresh Fruits,250
+P00550,Metro Eggs 1kg,Household,Laundry,270
+P00551,Green Namkeen 2kg,Grocery & Staples,Atta & Flour,400
+P00552,Pure Curd 1kg,Baby Care,Diapers,550
+P00553,Smart Curd 1kg,Beverages,Tea & Coffee,40
+P00554,Metro Shampoo 12 pcs,Personal Care,Deos & Perfumes,390
+P00555,Happy Toor Dal 1kg,Fruits & Vegetables,Fresh Vegetables,150
+P00556,Fresh Almonds 2kg,Dairy & Bakery,Paneer,30
+P00557,Metro Banana 2kg,Baby Care,Diapers,550
+P00558,Green Toothpaste 200g,Snacks & Branded Foods,Biscuits & Cookies,130
+P00559,Pure Namkeen 6 pcs,Beverages,Soft Drinks,220
+P00560,Pure Almonds 1kg,Baby Care,Baby Skin Care,760
+P00561,Smart Namkeen 1L,Grocery & Staples,Rice,210
+P00562,Smart Eggs 500g,Dairy & Bakery,Milk,140
+P00563,Urban Milk 200g,Household,Disposables,80
+P00564,Smart Apple 1L,Household,Disposables,330
+P00565,Daily Coffee 200g,Dairy & Bakery,Cakes,130
+P00566,Green Namkeen 1kg,Dairy & Bakery,Paneer,220
+P00567,Happy Basmati Rice 1L,Fruits & Vegetables,Fresh Vegetables,210
+P00568,Green Toothpaste 500g,Household,Laundry,340
+P00569,Daily Apple 6 pcs,Snacks & Branded Foods,Instant Food,150
+P00570,Good Potato 500ml,Fruits & Vegetables,Fresh Vegetables,290
+P00571,Good Namkeen 500ml,Personal Care,Hair Care,500
+P00572,Pure Coffee 12 pcs,Grocery & Staples,Rice,330
+P00573,Daily Basmati Rice 1kg,Beverages,Juices,230
+P00574,Smart Basmati Rice 1L,Grocery & Staples,Dal & Pulses,270
+P00575,Good Tomato 500ml,Personal Care,Skin Care,80
+P00576,Metro Cookies 1L,Personal Care,Deos & Perfumes,90
+P00577,Urban Chocolate 2kg,Baby Care,Baby Skin Care,640
+P00578,Urban Bread 500ml,Personal Care,Skin Care,530
+P00579,Fresh Tea 1L,Snacks & Branded Foods,Instant Food,80
+P00580,Green Toor Dal 1kg,Personal Care,Oral Care,460
+P00581,Daily Toothpaste 500ml,Beverages,Soft Drinks,230
+P00582,Smart Apple 2kg,Dairy & Bakery,Paneer,60
+P00583,Urban Cashew 12 pcs,Personal Care,Deos & Perfumes,570
+P00584,Good Atta 500ml,Household,Disposables,260
+P00585,Fresh Tea 500ml,Personal Care,Oral Care,580
+P00586,Urban Toor Dal 6 pcs,Household,Disposables,110
+P00587,Daily Atta 1L,Snacks & Branded Foods,Instant Food,190
+P00588,Daily Apple 500g,Snacks & Branded Foods,Biscuits & Cookies,50
+P00589,Smart Potato 500g,Dairy & Bakery,Breads,290
+P00590,Metro Curd 6 pcs,Household,Laundry,120
+P00591,Fresh Basmati Rice 500ml,Household,Cleaning Supplies,340
+P00592,Metro Tea 200g,Beverages,Juices,50
+P00593,Fresh Toothpaste 1L,Household,Laundry,340
+P00594,Green Bread 500g,Personal Care,Deos & Perfumes,200
+P00595,Happy Banana 1L,Household,Disposables,260
+P00596,Quick Banana 6 pcs,Snacks & Branded Foods,Instant Food,210
+P00597,Happy Tomato 500g,Personal Care,Deos & Perfumes,410
+P00598,Metro Shampoo 6 pcs,Fruits & Vegetables,Fresh Vegetables,230
+P00599,Urban Atta 6 pcs,Baby Care,Baby Food,250
+P00600,Metro Floor Cleaner 6 pcs,Household,Laundry,80
+P00601,Fresh Shampoo 6 pcs,Fruits & Vegetables,Fresh Fruits,150
+P00602,Good Coffee 1kg,Household,Disposables,140
+P00603,Good Bread 500ml,Household,Cleaning Supplies,110
+P00604,Metro Toor Dal 1L,Snacks & Branded Foods,Instant Food,120
+P00605,Green Bread 12 pcs,Beverages,Tea & Coffee,130
+P00606,Happy Cookies 2kg,Dairy & Bakery,Milk,80
+P00607,Fresh Almonds 200g,Beverages,Tea & Coffee,240
+P00608,Pure Juice 200g,Household,Laundry,170
+P00609,Fresh Banana 1L,Dairy & Bakery,Paneer,280
+P00610,Metro Bread 200g,Fruits & Vegetables,Fresh Vegetables,200
+P00611,Quick Bread 6 pcs,Household,Cleaning Supplies,150
+P00612,Fresh Floor Cleaner 1L,Baby Care,Baby Food,700
+P00613,Pure Atta 2kg,Household,Laundry,350
+P00614,Urban Cashew 6 pcs,Beverages,Juices,120
+P00615,Daily Coffee 1kg,Snacks & Branded Foods,Biscuits & Cookies,40
+P00616,Pure Cookies 1L,Beverages,Tea & Coffee,250
+P00617,Good Coffee 200g,Household,Laundry,180
+P00618,Smart Dishwash 12 pcs,Grocery & Staples,Dry Fruits,470
+P00619,Metro Chocolate 12 pcs,Beverages,Tea & Coffee,120
+P00620,Pure Shampoo 1L,Dairy & Bakery,Breads,210
+P00621,Daily Shampoo 500ml,Baby Care,Baby Skin Care,120
+P00622,Pure Almonds 1kg,Snacks & Branded Foods,Chips & Namkeen,210
+P00623,Urban Milk 12 pcs,Dairy & Bakery,Cakes,70
+P00624,Daily Toothpaste 6 pcs,Dairy & Bakery,Cakes,100
+P00625,Daily Bread 500g,Snacks & Branded Foods,Biscuits & Cookies,30
+P00626,Quick Toor Dal 2kg,Personal Care,Deos & Perfumes,160
+P00627,Fresh Potato 2kg,Grocery & Staples,Dry Fruits,460
+P00628,Pure Dishwash 200g,Personal Care,Deos & Perfumes,240
+P00629,Quick Milk 500g,Beverages,Soft Drinks,160
+P00630,Fresh Eggs 6 pcs,Beverages,Tea & Coffee,180
+P00631,Quick Coffee 1L,Dairy & Bakery,Cakes,140
+P00632,Fresh Banana 200g,Fruits & Vegetables,Fresh Fruits,280
+P00633,Quick Eggs 2kg,Baby Care,Baby Food,490
+P00634,Fresh Bread 500ml,Grocery & Staples,Dal & Pulses,100
+P00635,Pure Eggs 500g,Household,Cleaning Supplies,110
+P00636,Good Milk 500ml,Grocery & Staples,Dry Fruits,340
+P00637,Daily Cold Drink 200g,Beverages,Tea & Coffee,90
+P00638,Metro Cold Drink 12 pcs,Grocery & Staples,Atta & Flour,540
+P00639,Quick Chocolate 500ml,Baby Care,Baby Food,650
+P00640,Urban Tea 2kg,Grocery & Staples,Rice,330
+P00641,Quick Coffee 1kg,Fruits & Vegetables,Fresh Fruits,150
+P00642,Urban Tomato 500ml,Beverages,Energy Drinks,100
+P00643,Happy Banana 200g,Grocery & Staples,Dal & Pulses,580
+P00644,Pure Toor Dal 500ml,Personal Care,Hair Care,440
+P00645,Quick Apple 500ml,Baby Care,Baby Skin Care,360
+P00646,Good Shampoo 2kg,Household,Laundry,60
+P00647,Quick Toor Dal 6 pcs,Fruits & Vegetables,Fresh Fruits,70
+P00648,Green Shampoo 2kg,Baby Care,Baby Skin Care,720
+P00649,Good Banana 1L,Baby Care,Diapers,380
+P00650,Green Cold Drink 1L,Beverages,Tea & Coffee,130
+P00651,Metro Juice 200g,Grocery & Staples,Atta & Flour,510
+P00652,Good Almonds 6 pcs,Beverages,Energy Drinks,60
+P00653,Metro Eggs 1kg,Snacks & Branded Foods,Chips & Namkeen,50
+P00654,Good Potato 1L,Beverages,Energy Drinks,240
+P00655,Fresh Milk 12 pcs,Fruits & Vegetables,Fresh Fruits,110
+P00656,Good Cold Drink 6 pcs,Snacks & Branded Foods,Chips & Namkeen,20
+P00657,Green Toothpaste 1kg,Snacks & Branded Foods,Instant Food,200
+P00658,Smart Tomato 1L,Baby Care,Diapers,380
+P00659,Daily Juice 200g,Personal Care,Hair Care,310
+P00660,Fresh Atta 6 pcs,Grocery & Staples,Dry Fruits,70
+P00661,Urban Tomato 2kg,Household,Laundry,270
+P00662,Urban Curd 12 pcs,Personal Care,Hair Care,560
+P00663,Daily Curd 6 pcs,Household,Disposables,110
+P00664,Pure Juice 500g,Household,Cleaning Supplies,50
+P00665,Smart Banana 500g,Fruits & Vegetables,Fresh Fruits,70
+P00666,Pure Dishwash 1kg,Grocery & Staples,Rice,290
+P00667,Good Basmati Rice 500g,Dairy & Bakery,Breads,140
+P00668,Metro Atta 2kg,Grocery & Staples,Rice,450
+P00669,Fresh Eggs 1kg,Dairy & Bakery,Curd & Yogurt,160
+P00670,Urban Cashew 500ml,Personal Care,Skin Care,540
+P00671,Daily Juice 6 pcs,Personal Care,Skin Care,340
+P00672,Daily Toor Dal 500ml,Beverages,Juices,200
+P00673,Quick Curd 12 pcs,Household,Laundry,120
+P00674,Pure Dishwash 6 pcs,Dairy & Bakery,Breads,280
+P00675,Smart Coffee 2kg,Household,Disposables,60
+P00676,Good Dishwash 200g,Grocery & Staples,Dry Fruits,180
+P00677,Urban Shampoo 500ml,Baby Care,Baby Food,260
+P00678,Quick Floor Cleaner 1kg,Personal Care,Skin Care,250
+P00679,Urban Tomato 1L,Baby Care,Diapers,650
+P00680,Quick Potato 1L,Dairy & Bakery,Curd & Yogurt,200
+P00681,Urban Apple 500g,Baby Care,Baby Skin Care,130
+P00682,Quick Basmati Rice 1L,Dairy & Bakery,Curd & Yogurt,240
+P00683,Urban Cookies 2kg,Baby Care,Baby Skin Care,100
+P00684,Pure Basmati Rice 200g,Fruits & Vegetables,Herbs,240
+P00685,Good Tea 2kg,Baby Care,Baby Food,560
+P00686,Happy Shampoo 200g,Personal Care,Deos & Perfumes,580
+P00687,Happy Basmati Rice 2kg,Dairy & Bakery,Curd & Yogurt,190
+P00688,Urban Cookies 500ml,Household,Laundry,270
+P00689,Metro Banana 6 pcs,Beverages,Soft Drinks,80
+P00690,Daily Chocolate 6 pcs,Baby Care,Baby Skin Care,450
+P00691,Happy Cold Drink 200g,Grocery & Staples,Dal & Pulses,240
+P00692,Metro Cashew 1kg,Dairy & Bakery,Paneer,120
+P00693,Green Almonds 500ml,Snacks & Branded Foods,Biscuits & Cookies,150
+P00694,Metro Tea 1kg,Baby Care,Baby Food,170
+P00695,Fresh Curd 12 pcs,Beverages,Soft Drinks,120
+P00696,Urban Eggs 500g,Household,Disposables,240
+P00697,Pure Milk 12 pcs,Dairy & Bakery,Milk,40
+P00698,Happy Namkeen 12 pcs,Fruits & Vegetables,Herbs,230
+P00699,Metro Eggs 6 pcs,Fruits & Vegetables,Fresh Fruits,70
+P00700,Smart Tomato 6 pcs,Snacks & Branded Foods,Biscuits & Cookies,70
+P00701,Metro Cookies 12 pcs,Grocery & Staples,Rice,350
+P00702,Good Milk 12 pcs,Household,Laundry,240
+P00703,Happy Banana 6 pcs,Household,Laundry,340
+P00704,Smart Almonds 500g,Grocery & Staples,Rice,400
+P00705,Metro Namkeen 6 pcs,Snacks & Branded Foods,Biscuits & Cookies,40
+P00706,Green Tea 500ml,Dairy & Bakery,Breads,270
+P00707,Metro Toor Dal 6 pcs,Fruits & Vegetables,Herbs,160
+P00708,Pure Cashew 200g,Snacks & Branded Foods,Biscuits & Cookies,140
+P00709,Daily Atta 1L,Beverages,Tea & Coffee,160
+P00710,Good Potato 200g,Grocery & Staples,Rice,200
+P00711,Happy Apple 1kg,Beverages,Juices,90
+P00712,Quick Cookies 500g,Baby Care,Baby Food,170
+P00713,Green Eggs 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,240
+P00714,Daily Tomato 12 pcs,Personal Care,Skin Care,290
+P00715,Good Almonds 1L,Fruits & Vegetables,Fresh Vegetables,190
+P00716,Green Eggs 1kg,Beverages,Soft Drinks,170
+P00717,Pure Almonds 500g,Baby Care,Baby Skin Care,460
+P00718,Smart Namkeen 2kg,Fruits & Vegetables,Herbs,210
+P00719,Fresh Cashew 6 pcs,Dairy & Bakery,Paneer,200
+P00720,Metro Juice 12 pcs,Grocery & Staples,Rice,210
+P00721,Urban Basmati Rice 1L,Beverages,Energy Drinks,200
+P00722,Fresh Bread 1L,Dairy & Bakery,Curd & Yogurt,200
+P00723,Happy Eggs 12 pcs,Snacks & Branded Foods,Instant Food,170
+P00724,Metro Potato 6 pcs,Household,Laundry,190
+P00725,Metro Cold Drink 2kg,Fruits & Vegetables,Fresh Vegetables,230
+P00726,Urban Toor Dal 2kg,Snacks & Branded Foods,Instant Food,190
+P00727,Good Banana 1kg,Beverages,Tea & Coffee,240
+P00728,Quick Almonds 500ml,Dairy & Bakery,Milk,110
+P00729,Fresh Floor Cleaner 500ml,Grocery & Staples,Rice,130
+P00730,Metro Coffee 500g,Baby Care,Diapers,500
+P00731,Metro Dishwash 6 pcs,Snacks & Branded Foods,Chips & Namkeen,210
+P00732,Quick Apple 6 pcs,Dairy & Bakery,Paneer,40
+P00733,Metro Cashew 12 pcs,Snacks & Branded Foods,Chips & Namkeen,30
+P00734,Fresh Eggs 1kg,Fruits & Vegetables,Herbs,300
+P00735,Smart Toor Dal 1kg,Household,Laundry,350
+P00736,Smart Tomato 500ml,Personal Care,Deos & Perfumes,170
+P00737,Green Cashew 200g,Household,Cleaning Supplies,190
+P00738,Metro Shampoo 6 pcs,Personal Care,Oral Care,480
+P00739,Happy Basmati Rice 12 pcs,Grocery & Staples,Rice,80
+P00740,Metro Dishwash 1L,Grocery & Staples,Dal & Pulses,180
+P00741,Happy Namkeen 500ml,Snacks & Branded Foods,Biscuits & Cookies,180
+P00742,Daily Dishwash 500g,Baby Care,Diapers,690
+P00743,Green Almonds 500g,Personal Care,Deos & Perfumes,440
+P00744,Daily Floor Cleaner 12 pcs,Baby Care,Baby Skin Care,660
+P00745,Quick Tea 500g,Fruits & Vegetables,Fresh Vegetables,170
+P00746,Good Coffee 2kg,Household,Cleaning Supplies,210
+P00747,Quick Cold Drink 12 pcs,Dairy & Bakery,Milk,40
+P00748,Daily Curd 6 pcs,Personal Care,Deos & Perfumes,590
+P00749,Fresh Basmati Rice 200g,Snacks & Branded Foods,Chips & Namkeen,80
+P00750,Daily Tea 500ml,Baby Care,Baby Skin Care,130
+P00751,Quick Milk 200g,Personal Care,Deos & Perfumes,500
+P00752,Fresh Namkeen 6 pcs,Beverages,Tea & Coffee,250
+P00753,Pure Banana 500g,Fruits & Vegetables,Fresh Vegetables,40
+P00754,Urban Apple 2kg,Baby Care,Baby Skin Care,430
+P00755,Pure Cashew 2kg,Beverages,Tea & Coffee,50
+P00756,Fresh Toor Dal 1kg,Dairy & Bakery,Breads,130
+P00757,Pure Chocolate 1kg,Grocery & Staples,Dal & Pulses,600
+P00758,Pure Tea 1kg,Snacks & Branded Foods,Biscuits & Cookies,230
+P00759,Fresh Almonds 2kg,Household,Cleaning Supplies,140
+P00760,Quick Dishwash 6 pcs,Fruits & Vegetables,Fresh Vegetables,80
+P00761,Green Floor Cleaner 6 pcs,Snacks & Branded Foods,Instant Food,250
+P00762,Quick Atta 2kg,Fruits & Vegetables,Fresh Fruits,50
+P00763,Quick Namkeen 1L,Household,Disposables,110
+P00764,Metro Floor Cleaner 1kg,Fruits & Vegetables,Fresh Fruits,210
+P00765,Urban Toothpaste 1kg,Beverages,Tea & Coffee,100
+P00766,Quick Dishwash 500g,Fruits & Vegetables,Herbs,220
+P00767,Happy Cashew 2kg,Beverages,Soft Drinks,200
+P00768,Good Coffee 1kg,Snacks & Branded Foods,Instant Food,180
+P00769,Urban Toor Dal 2kg,Baby Care,Baby Food,720
+P00770,Metro Milk 500ml,Baby Care,Diapers,660
+P00771,Urban Dishwash 1L,Grocery & Staples,Dal & Pulses,240
+P00772,Daily Banana 6 pcs,Snacks & Branded Foods,Biscuits & Cookies,250
+P00773,Fresh Apple 500ml,Grocery & Staples,Dry Fruits,370
+P00774,Daily Atta 12 pcs,Fruits & Vegetables,Fresh Vegetables,260
+P00775,Happy Floor Cleaner 6 pcs,Baby Care,Baby Skin Care,450
+P00776,Pure Atta 200g,Personal Care,Hair Care,200
+P00777,Metro Dishwash 500ml,Personal Care,Oral Care,130
+P00778,Happy Banana 12 pcs,Personal Care,Hair Care,160
+P00779,Green Curd 2kg,Household,Disposables,200
+P00780,Urban Tea 12 pcs,Dairy & Bakery,Paneer,220
+P00781,Smart Eggs 1L,Fruits & Vegetables,Fresh Fruits,280
+P00782,Pure Coffee 1kg,Dairy & Bakery,Curd & Yogurt,280
+P00783,Green Almonds 1kg,Grocery & Staples,Atta & Flour,600
+P00784,Urban Cookies 200g,Personal Care,Hair Care,120
+P00785,Quick Tea 1L,Baby Care,Diapers,270
+P00786,Pure Juice 500ml,Baby Care,Diapers,120
+P00787,Urban Namkeen 6 pcs,Beverages,Tea & Coffee,210
+P00788,Good Dishwash 6 pcs,Snacks & Branded Foods,Biscuits & Cookies,160
+P00789,Daily Atta 1L,Dairy & Bakery,Breads,220
+P00790,Quick Atta 500ml,Beverages,Soft Drinks,180
+P00791,Urban Atta 1L,Baby Care,Baby Skin Care,130
+P00792,Metro Tea 500ml,Personal Care,Skin Care,380
+P00793,Good Milk 6 pcs,Household,Cleaning Supplies,270
+P00794,Fresh Eggs 500g,Snacks & Branded Foods,Biscuits & Cookies,20
+P00795,Fresh Coffee 500g,Personal Care,Skin Care,320
+P00796,Metro Potato 12 pcs,Fruits & Vegetables,Herbs,60
+P00797,Happy Cookies 500ml,Fruits & Vegetables,Fresh Vegetables,20
+P00798,Green Toothpaste 1L,Dairy & Bakery,Breads,200
+P00799,Daily Curd 500ml,Fruits & Vegetables,Herbs,110
+P00800,Urban Banana 2kg,Fruits & Vegetables,Fresh Vegetables,210
+P00801,Quick Potato 6 pcs,Snacks & Branded Foods,Instant Food,210
+P00802,Fresh Tea 12 pcs,Baby Care,Diapers,280
+P00803,Quick Shampoo 1kg,Fruits & Vegetables,Herbs,240
+P00804,Metro Dishwash 500g,Baby Care,Baby Skin Care,510
+P00805,Good Basmati Rice 12 pcs,Baby Care,Diapers,340
+P00806,Quick Shampoo 500g,Personal Care,Deos & Perfumes,260
+P00807,Good Atta 200g,Dairy & Bakery,Milk,230
+P00808,Smart Atta 6 pcs,Beverages,Juices,90
+P00809,Pure Cold Drink 6 pcs,Snacks & Branded Foods,Chips & Namkeen,130
+P00810,Daily Tea 500ml,Beverages,Tea & Coffee,190
+P00811,Quick Chocolate 1kg,Grocery & Staples,Rice,380
+P00812,Smart Shampoo 500ml,Beverages,Soft Drinks,200
+P00813,Fresh Potato 500g,Snacks & Branded Foods,Instant Food,100
+P00814,Pure Milk 500g,Snacks & Branded Foods,Chips & Namkeen,180
+P00815,Smart Tea 1kg,Baby Care,Baby Food,340
+P00816,Good Shampoo 500g,Beverages,Tea & Coffee,60
+P00817,Good Cashew 1L,Grocery & Staples,Dal & Pulses,130
+P00818,Daily Cold Drink 500g,Grocery & Staples,Atta & Flour,350
+P00819,Good Atta 12 pcs,Fruits & Vegetables,Fresh Fruits,80
+P00820,Smart Apple 500g,Grocery & Staples,Atta & Flour,120
+P00821,Metro Cashew 500g,Beverages,Tea & Coffee,40
+P00822,Urban Milk 1kg,Grocery & Staples,Dry Fruits,550
+P00823,Fresh Basmati Rice 500g,Grocery & Staples,Dal & Pulses,90
+P00824,Metro Floor Cleaner 200g,Baby Care,Diapers,460
+P00825,Daily Chocolate 500g,Personal Care,Skin Care,510
+P00826,Urban Almonds 1kg,Personal Care,Skin Care,500
+P00827,Daily Almonds 1kg,Personal Care,Skin Care,550
+P00828,Fresh Floor Cleaner 1kg,Baby Care,Baby Food,380
+P00829,Green Basmati Rice 12 pcs,Grocery & Staples,Rice,190
+P00830,Green Tea 500g,Grocery & Staples,Dry Fruits,210
+P00831,Daily Coffee 500g,Beverages,Tea & Coffee,40
+P00832,Urban Almonds 500ml,Personal Care,Skin Care,260
+P00833,Metro Shampoo 500g,Fruits & Vegetables,Fresh Vegetables,30
+P00834,Urban Namkeen 2kg,Personal Care,Hair Care,240
+P00835,Happy Milk 2kg,Fruits & Vegetables,Fresh Fruits,290
+P00836,Happy Coffee 200g,Snacks & Branded Foods,Biscuits & Cookies,100
+P00837,Urban Dishwash 1L,Beverages,Juices,30
+P00838,Quick Banana 1L,Fruits & Vegetables,Fresh Vegetables,220
+P00839,Urban Basmati Rice 1L,Beverages,Tea & Coffee,150
+P00840,Daily Namkeen 1L,Personal Care,Skin Care,240
+P00841,Happy Atta 12 pcs,Baby Care,Diapers,690
+P00842,Pure Shampoo 1kg,Personal Care,Deos & Perfumes,590
+P00843,Fresh Chocolate 6 pcs,Baby Care,Diapers,170
+P00844,Smart Basmati Rice 2kg,Grocery & Staples,Dal & Pulses,60
+P00845,Good Namkeen 6 pcs,Beverages,Energy Drinks,150
+P00846,Green Toothpaste 200g,Fruits & Vegetables,Fresh Vegetables,20
+P00847,Quick Eggs 500g,Baby Care,Baby Skin Care,740
+P00848,Fresh Basmati Rice 1L,Household,Disposables,130
+P00849,Metro Basmati Rice 12 pcs,Baby Care,Baby Food,310
+P00850,Urban Bread 2kg,Fruits & Vegetables,Fresh Vegetables,230
+P00851,Pure Cookies 1kg,Dairy & Bakery,Paneer,130
+P00852,Good Coffee 1L,Snacks & Branded Foods,Biscuits & Cookies,40
+P00853,Good Namkeen 2kg,Fruits & Vegetables,Herbs,70
+P00854,Metro Milk 1kg,Dairy & Bakery,Milk,180
+P00855,Happy Dishwash 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,40
+P00856,Daily Eggs 200g,Personal Care,Deos & Perfumes,80
+P00857,Daily Potato 12 pcs,Beverages,Soft Drinks,140
+P00858,Happy Juice 12 pcs,Fruits & Vegetables,Herbs,210
+P00859,Good Basmati Rice 200g,Snacks & Branded Foods,Instant Food,230
+P00860,Smart Milk 500ml,Baby Care,Baby Food,130
+P00861,Pure Apple 1L,Grocery & Staples,Atta & Flour,60
+P00862,Pure Juice 6 pcs,Dairy & Bakery,Breads,20
+P00863,Quick Tea 200g,Grocery & Staples,Dry Fruits,560
+P00864,Metro Cookies 1kg,Snacks & Branded Foods,Biscuits & Cookies,220
+P00865,Happy Cold Drink 500ml,Baby Care,Diapers,120
+P00866,Daily Tea 200g,Grocery & Staples,Dal & Pulses,150
+P00867,Pure Juice 500g,Dairy & Bakery,Milk,160
+P00868,Happy Tea 12 pcs,Snacks & Branded Foods,Chips & Namkeen,200
+P00869,Metro Potato 2kg,Grocery & Staples,Atta & Flour,470
+P00870,Green Apple 1L,Fruits & Vegetables,Herbs,50
+P00871,Happy Atta 500ml,Household,Laundry,230
+P00872,Smart Banana 500g,Personal Care,Skin Care,190
+P00873,Urban Chocolate 500ml,Baby Care,Baby Skin Care,690
+P00874,Pure Curd 200g,Fruits & Vegetables,Fresh Vegetables,80
+P00875,Metro Cookies 200g,Baby Care,Diapers,110
+P00876,Quick Potato 1kg,Dairy & Bakery,Cakes,140
+P00877,Daily Cashew 200g,Snacks & Branded Foods,Chips & Namkeen,50
+P00878,Smart Eggs 1kg,Fruits & Vegetables,Fresh Vegetables,30
+P00879,Happy Tea 1L,Household,Disposables,300
+P00880,Happy Almonds 6 pcs,Baby Care,Baby Food,720
+P00881,Metro Atta 200g,Baby Care,Diapers,410
+P00882,Pure Milk 12 pcs,Baby Care,Diapers,660
+P00883,Smart Juice 2kg,Dairy & Bakery,Cakes,50
+P00884,Daily Atta 500g,Personal Care,Skin Care,490
+P00885,Good Milk 12 pcs,Beverages,Soft Drinks,50
+P00886,Pure Shampoo 500g,Grocery & Staples,Rice,320
+P00887,Quick Floor Cleaner 500g,Household,Laundry,230
+P00888,Pure Atta 6 pcs,Beverages,Tea & Coffee,40
+P00889,Smart Curd 1L,Baby Care,Diapers,580
+P00890,Quick Tomato 2kg,Baby Care,Baby Food,530
+P00891,Smart Shampoo 500ml,Baby Care,Baby Skin Care,770
+P00892,Urban Bread 2kg,Beverages,Energy Drinks,90
+P00893,Quick Milk 1L,Snacks & Branded Foods,Instant Food,160
+P00894,Quick Toothpaste 12 pcs,Fruits & Vegetables,Fresh Fruits,50
+P00895,Pure Cookies 2kg,Personal Care,Deos & Perfumes,220
+P00896,Quick Toor Dal 6 pcs,Grocery & Staples,Rice,470
+P00897,Fresh Atta 12 pcs,Beverages,Juices,240
+P00898,Metro Bread 2kg,Beverages,Tea & Coffee,130
+P00899,Smart Eggs 1kg,Fruits & Vegetables,Fresh Fruits,170
+P00900,Smart Cashew 500ml,Baby Care,Baby Skin Care,500
+P00901,Daily Coffee 2kg,Baby Care,Baby Food,320
+P00902,Pure Basmati Rice 500g,Baby Care,Baby Food,260
+P00903,Smart Tomato 1L,Grocery & Staples,Dry Fruits,160
+P00904,Happy Almonds 1kg,Fruits & Vegetables,Fresh Vegetables,240
+P00905,Smart Toothpaste 500g,Personal Care,Hair Care,430
+P00906,Urban Shampoo 6 pcs,Household,Disposables,340
+P00907,Pure Curd 500ml,Household,Laundry,50
+P00908,Green Toor Dal 200g,Snacks & Branded Foods,Instant Food,70
+P00909,Green Toothpaste 2kg,Baby Care,Baby Food,400
+P00910,Happy Toor Dal 1kg,Personal Care,Deos & Perfumes,500
+P00911,Green Namkeen 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,120
+P00912,Metro Curd 12 pcs,Dairy & Bakery,Milk,250
+P00913,Good Toor Dal 500g,Snacks & Branded Foods,Chips & Namkeen,80
+P00914,Good Tea 200g,Household,Disposables,100
+P00915,Happy Shampoo 12 pcs,Snacks & Branded Foods,Instant Food,190
+P00916,Happy Toor Dal 500g,Snacks & Branded Foods,Chips & Namkeen,70
+P00917,Good Banana 6 pcs,Personal Care,Skin Care,280
+P00918,Urban Coffee 1kg,Dairy & Bakery,Cakes,160
+P00919,Happy Dishwash 500ml,Beverages,Tea & Coffee,100
+P00920,Urban Milk 12 pcs,Beverages,Juices,60
+P00921,Urban Tea 6 pcs,Personal Care,Oral Care,350
+P00922,Happy Juice 6 pcs,Baby Care,Diapers,130
+P00923,Smart Namkeen 500g,Fruits & Vegetables,Herbs,150
+P00924,Daily Eggs 500ml,Fruits & Vegetables,Fresh Vegetables,100
+P00925,Quick Banana 6 pcs,Snacks & Branded Foods,Instant Food,70
+P00926,Happy Basmati Rice 200g,Snacks & Branded Foods,Biscuits & Cookies,90
+P00927,Urban Dishwash 500g,Personal Care,Oral Care,140
+P00928,Good Toor Dal 6 pcs,Grocery & Staples,Dry Fruits,360
+P00929,Quick Apple 500ml,Grocery & Staples,Dry Fruits,130
+P00930,Happy Eggs 12 pcs,Baby Care,Baby Skin Care,780
+P00931,Green Tea 2kg,Beverages,Juices,160
+P00932,Metro Coffee 200g,Baby Care,Baby Skin Care,350
+P00933,Green Cold Drink 500ml,Dairy & Bakery,Milk,160
+P00934,Urban Juice 500g,Dairy & Bakery,Breads,40
+P00935,Urban Eggs 12 pcs,Grocery & Staples,Rice,80
+P00936,Daily Shampoo 2kg,Grocery & Staples,Dry Fruits,350
+P00937,Good Floor Cleaner 500g,Dairy & Bakery,Breads,30
+P00938,Happy Atta 12 pcs,Household,Cleaning Supplies,100
+P00939,Quick Cashew 1kg,Personal Care,Skin Care,270
+P00940,Urban Basmati Rice 1L,Household,Cleaning Supplies,140
+P00941,Quick Milk 200g,Dairy & Bakery,Cakes,230
+P00942,Smart Bread 200g,Baby Care,Baby Food,590
+P00943,Happy Curd 1L,Grocery & Staples,Atta & Flour,60
+P00944,Happy Namkeen 500g,Beverages,Energy Drinks,90
+P00945,Happy Atta 500g,Snacks & Branded Foods,Biscuits & Cookies,210
+P00946,Good Floor Cleaner 12 pcs,Personal Care,Hair Care,380
+P00947,Quick Potato 1kg,Snacks & Branded Foods,Instant Food,160
+P00948,Quick Juice 500g,Snacks & Branded Foods,Chips & Namkeen,190
+P00949,Quick Dishwash 500ml,Fruits & Vegetables,Herbs,270
+P00950,Happy Tomato 2kg,Grocery & Staples,Atta & Flour,460
+P00951,Quick Cookies 500ml,Household,Cleaning Supplies,120
+P00952,Pure Basmati Rice 2kg,Beverages,Tea & Coffee,100
+P00953,Green Tomato 500ml,Baby Care,Diapers,730
+P00954,Smart Cashew 1kg,Dairy & Bakery,Breads,270
+P00955,Smart Floor Cleaner 2kg,Dairy & Bakery,Breads,200
+P00956,Good Apple 6 pcs,Beverages,Energy Drinks,40
+P00957,Smart Cashew 12 pcs,Beverages,Juices,100
+P00958,Metro Floor Cleaner 2kg,Fruits & Vegetables,Fresh Vegetables,110
+P00959,Happy Potato 200g,Dairy & Bakery,Milk,190
+P00960,Quick Toor Dal 1kg,Fruits & Vegetables,Herbs,100
+P00961,Daily Apple 6 pcs,Snacks & Branded Foods,Biscuits & Cookies,250
+P00962,Metro Apple 1kg,Personal Care,Deos & Perfumes,330
+P00963,Fresh Coffee 2kg,Beverages,Juices,160
+P00964,Quick Basmati Rice 200g,Dairy & Bakery,Cakes,250
+P00965,Good Shampoo 12 pcs,Snacks & Branded Foods,Instant Food,120
+P00966,Urban Curd 1L,Personal Care,Skin Care,200
+P00967,Urban Cookies 500ml,Dairy & Bakery,Paneer,60
+P00968,Happy Cashew 6 pcs,Baby Care,Diapers,490
+P00969,Good Tomato 2kg,Snacks & Branded Foods,Chips & Namkeen,70
+P00970,Happy Cold Drink 2kg,Personal Care,Oral Care,320
+P00971,Good Coffee 2kg,Personal Care,Skin Care,590
+P00972,Pure Milk 2kg,Fruits & Vegetables,Fresh Fruits,50
+P00973,Metro Eggs 6 pcs,Household,Laundry,200
+P00974,Fresh Curd 12 pcs,Personal Care,Deos & Perfumes,110
+P00975,Metro Coffee 500g,Baby Care,Diapers,560
+P00976,Good Potato 1L,Beverages,Juices,120
+P00977,Fresh Almonds 2kg,Personal Care,Oral Care,230
+P00978,Fresh Chocolate 2kg,Dairy & Bakery,Milk,220
+P00979,Good Toothpaste 2kg,Fruits & Vegetables,Fresh Fruits,250
+P00980,Smart Cashew 200g,Snacks & Branded Foods,Chips & Namkeen,40
+P00981,Quick Apple 1kg,Baby Care,Diapers,540
+P00982,Quick Eggs 6 pcs,Grocery & Staples,Dry Fruits,280
+P00983,Fresh Coffee 6 pcs,Grocery & Staples,Dry Fruits,490
+P00984,Green Cookies 12 pcs,Household,Cleaning Supplies,150
+P00985,Daily Tea 1kg,Household,Disposables,260
+P00986,Daily Atta 1kg,Personal Care,Skin Care,390
+P00987,Good Floor Cleaner 2kg,Dairy & Bakery,Cakes,110
+P00988,Happy Curd 2kg,Beverages,Juices,60
+P00989,Urban Floor Cleaner 6 pcs,Household,Disposables,110
+P00990,Daily Potato 200g,Snacks & Branded Foods,Chips & Namkeen,210
+P00991,Good Apple 2kg,Personal Care,Hair Care,380
+P00992,Daily Almonds 6 pcs,Household,Disposables,180
+P00993,Metro Toor Dal 6 pcs,Fruits & Vegetables,Fresh Fruits,100
+P00994,Metro Coffee 1kg,Dairy & Bakery,Breads,70
+P00995,Green Dishwash 1kg,Household,Laundry,200
+P00996,Quick Atta 200g,Grocery & Staples,Atta & Flour,200
+P00997,Smart Apple 6 pcs,Grocery & Staples,Rice,70
+P00998,Good Tea 500g,Grocery & Staples,Dal & Pulses,160
+P00999,Happy Potato 500g,Dairy & Bakery,Cakes,270
+P01000,Good Namkeen 2kg,Grocery & Staples,Dal & Pulses,110
+P01001,Fresh Bread 500ml,Snacks & Branded Foods,Instant Food,60
+P01002,Pure Almonds 6 pcs,Snacks & Branded Foods,Chips & Namkeen,30
+P01003,Green Dishwash 1kg,Fruits & Vegetables,Fresh Fruits,230
+P01004,Daily Cashew 500g,Beverages,Juices,40
+P01005,Fresh Shampoo 200g,Personal Care,Skin Care,520
+P01006,Urban Tea 12 pcs,Baby Care,Baby Skin Care,570
+P01007,Fresh Tea 12 pcs,Dairy & Bakery,Curd & Yogurt,210
+P01008,Pure Shampoo 2kg,Baby Care,Baby Skin Care,170
+P01009,Green Bread 1L,Grocery & Staples,Atta & Flour,160
+P01010,Smart Banana 6 pcs,Dairy & Bakery,Curd & Yogurt,110
+P01011,Happy Toor Dal 500ml,Beverages,Juices,230
+P01012,Smart Cold Drink 1L,Baby Care,Baby Skin Care,110
+P01013,Good Potato 1kg,Household,Cleaning Supplies,390
+P01014,Fresh Tea 500ml,Baby Care,Baby Food,740
+P01015,Good Toor Dal 12 pcs,Dairy & Bakery,Cakes,280
+P01016,Good Shampoo 200g,Dairy & Bakery,Cakes,240
+P01017,Daily Shampoo 12 pcs,Fruits & Vegetables,Fresh Vegetables,280
+P01018,Fresh Dishwash 2kg,Household,Cleaning Supplies,210
+P01019,Metro Dishwash 1L,Snacks & Branded Foods,Instant Food,150
+P01020,Good Coffee 500g,Beverages,Tea & Coffee,130
+P01021,Good Floor Cleaner 500g,Grocery & Staples,Atta & Flour,50
+P01022,Quick Floor Cleaner 1kg,Personal Care,Deos & Perfumes,150
+P01023,Metro Floor Cleaner 6 pcs,Beverages,Juices,60
+P01024,Smart Potato 500ml,Dairy & Bakery,Curd & Yogurt,270
+P01025,Pure Bread 500g,Snacks & Branded Foods,Chips & Namkeen,20
+P01026,Smart Banana 200g,Dairy & Bakery,Paneer,120
+P01027,Happy Toothpaste 6 pcs,Household,Laundry,40
+P01028,Smart Curd 500g,Household,Cleaning Supplies,210
+P01029,Smart Almonds 200g,Beverages,Energy Drinks,150
+P01030,Green Atta 2kg,Beverages,Juices,190
+P01031,Pure Tomato 6 pcs,Household,Disposables,200
+P01032,Pure Juice 12 pcs,Grocery & Staples,Rice,210
+P01033,Daily Toothpaste 6 pcs,Personal Care,Skin Care,410
+P01034,Smart Tomato 12 pcs,Household,Cleaning Supplies,380
+P01035,Quick Milk 12 pcs,Household,Disposables,180
+P01036,Green Apple 6 pcs,Dairy & Bakery,Breads,120
+P01037,Quick Apple 12 pcs,Grocery & Staples,Rice,510
+P01038,Urban Shampoo 500ml,Baby Care,Baby Skin Care,800
+P01039,Urban Milk 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,110
+P01040,Happy Juice 1kg,Dairy & Bakery,Paneer,30
+P01041,Happy Juice 6 pcs,Fruits & Vegetables,Fresh Fruits,160
+P01042,Quick Toor Dal 2kg,Personal Care,Hair Care,320
+P01043,Fresh Bread 6 pcs,Dairy & Bakery,Curd & Yogurt,230
+P01044,Smart Toor Dal 12 pcs,Beverages,Energy Drinks,170
+P01045,Smart Eggs 12 pcs,Personal Care,Deos & Perfumes,300
+P01046,Fresh Cashew 200g,Beverages,Soft Drinks,70
+P01047,Good Basmati Rice 12 pcs,Dairy & Bakery,Curd & Yogurt,150
+P01048,Daily Cashew 500g,Grocery & Staples,Atta & Flour,510
+P01049,Good Floor Cleaner 500ml,Beverages,Juices,40
+P01050,Metro Atta 6 pcs,Personal Care,Oral Care,510
+P01051,Quick Almonds 200g,Baby Care,Diapers,370
+P01052,Quick Curd 500ml,Fruits & Vegetables,Herbs,100
+P01053,Pure Toothpaste 6 pcs,Grocery & Staples,Dry Fruits,200
+P01054,Green Juice 200g,Household,Cleaning Supplies,280
+P01055,Daily Eggs 1L,Household,Laundry,70
+P01056,Urban Dishwash 2kg,Household,Laundry,210
+P01057,Daily Bread 500g,Dairy & Bakery,Curd & Yogurt,120
+P01058,Happy Floor Cleaner 12 pcs,Beverages,Tea & Coffee,210
+P01059,Green Floor Cleaner 1L,Grocery & Staples,Atta & Flour,200
+P01060,Pure Cold Drink 2kg,Personal Care,Skin Care,490
+P01061,Good Juice 2kg,Baby Care,Baby Food,460
+P01062,Good Milk 500ml,Fruits & Vegetables,Fresh Fruits,280
+P01063,Pure Basmati Rice 6 pcs,Beverages,Juices,60
+P01064,Pure Basmati Rice 1kg,Beverages,Tea & Coffee,170
+P01065,Fresh Toothpaste 2kg,Grocery & Staples,Dry Fruits,310
+P01066,Quick Basmati Rice 2kg,Household,Laundry,70
+P01067,Fresh Toothpaste 200g,Baby Care,Baby Food,290
+P01068,Pure Atta 200g,Household,Disposables,160
+P01069,Green Tea 500ml,Beverages,Soft Drinks,160
+P01070,Urban Coffee 500g,Beverages,Energy Drinks,170
+P01071,Metro Coffee 200g,Household,Cleaning Supplies,110
+P01072,Quick Cashew 6 pcs,Baby Care,Baby Skin Care,560
+P01073,Metro Milk 12 pcs,Snacks & Branded Foods,Biscuits & Cookies,220
+P01074,Urban Cookies 1L,Fruits & Vegetables,Herbs,300
+P01075,Pure Eggs 200g,Grocery & Staples,Atta & Flour,180
+P01076,Fresh Tea 500g,Beverages,Energy Drinks,190
+P01077,Pure Tea 2kg,Household,Cleaning Supplies,80
+P01078,Pure Banana 500ml,Beverages,Juices,100
+P01079,Fresh Tomato 2kg,Snacks & Branded Foods,Instant Food,60
+P01080,Urban Tomato 1L,Household,Laundry,320
+P01081,Urban Tea 500ml,Fruits & Vegetables,Fresh Vegetables,140
+P01082,Smart Cold Drink 6 pcs,Fruits & Vegetables,Fresh Vegetables,170
+P01083,Metro Shampoo 12 pcs,Personal Care,Skin Care,220
+P01084,Green Tomato 500g,Grocery & Staples,Dry Fruits,290
+P01085,Fresh Juice 500g,Grocery & Staples,Dry Fruits,130
+P01086,Pure Atta 1kg,Baby Care,Diapers,590
+P01087,Urban Namkeen 12 pcs,Snacks & Branded Foods,Chips & Namkeen,40
+P01088,Pure Dishwash 1L,Baby Care,Diapers,530
+P01089,Fresh Juice 200g,Personal Care,Skin Care,150
+P01090,Green Cookies 12 pcs,Fruits & Vegetables,Herbs,190
+P01091,Happy Atta 500ml,Household,Laundry,290
+P01092,Fresh Toor Dal 6 pcs,Household,Disposables,160
+P01093,Urban Shampoo 6 pcs,Fruits & Vegetables,Fresh Fruits,60
+P01094,Metro Toor Dal 1kg,Household,Disposables,340
+P01095,Smart Floor Cleaner 200g,Fruits & Vegetables,Fresh Vegetables,70
+P01096,Smart Cashew 500ml,Fruits & Vegetables,Fresh Vegetables,160
+P01097,Happy Floor Cleaner 1L,Household,Disposables,360
+P01098,Quick Toor Dal 500ml,Beverages,Tea & Coffee,230
+P01099,Urban Cookies 6 pcs,Grocery & Staples,Dal & Pulses,180
+P01100,Fresh Cookies 1kg,Personal Care,Skin Care,560
+P01101,Green Toor Dal 12 pcs,Baby Care,Diapers,170
+P01102,Smart Almonds 1kg,Fruits & Vegetables,Fresh Fruits,190
+P01103,Daily Tea 2kg,Personal Care,Oral Care,580
+P01104,Good Toor Dal 2kg,Snacks & Branded Foods,Biscuits & Cookies,250
+P01105,Urban Shampoo 200g,Dairy & Bakery,Cakes,150
+P01106,Quick Apple 1L,Fruits & Vegetables,Herbs,280
+P01107,Green Juice 2kg,Snacks & Branded Foods,Chips & Namkeen,150
+P01108,Smart Apple 2kg,Personal Care,Hair Care,120
+P01109,Smart Potato 500g,Fruits & Vegetables,Fresh Vegetables,40
+P01110,Green Chocolate 12 pcs,Dairy & Bakery,Breads,200
+P01111,Green Cookies 2kg,Grocery & Staples,Dal & Pulses,90
+P01112,Pure Juice 200g,Snacks & Branded Foods,Chips & Namkeen,90
+P01113,Urban Potato 1kg,Beverages,Energy Drinks,230
+P01114,Daily Cashew 2kg,Dairy & Bakery,Paneer,170
+P01115,Daily Atta 12 pcs,Dairy & Bakery,Curd & Yogurt,100
+P01116,Quick Toothpaste 6 pcs,Fruits & Vegetables,Fresh Vegetables,250
+P01117,Good Atta 200g,Snacks & Branded Foods,Biscuits & Cookies,150
+P01118,Quick Namkeen 12 pcs,Grocery & Staples,Atta & Flour,80
+P01119,Green Cookies 2kg,Household,Disposables,90
+P01120,Fresh Toor Dal 500g,Snacks & Branded Foods,Biscuits & Cookies,110
+P01121,Pure Namkeen 200g,Grocery & Staples,Atta & Flour,570
+P01122,Smart Floor Cleaner 500g,Baby Care,Diapers,670
+P01123,Fresh Toothpaste 12 pcs,Baby Care,Baby Food,210
+P01124,Pure Curd 200g,Grocery & Staples,Dry Fruits,420
+P01125,Metro Potato 500ml,Household,Laundry,390
+P01126,Smart Shampoo 12 pcs,Grocery & Staples,Atta & Flour,100
+P01127,Smart Toothpaste 12 pcs,Fruits & Vegetables,Fresh Vegetables,110
+P01128,Good Juice 500g,Personal Care,Oral Care,430
+P01129,Daily Namkeen 6 pcs,Household,Cleaning Supplies,250
+P01130,Smart Cold Drink 500g,Fruits & Vegetables,Fresh Vegetables,160
+P01131,Good Basmati Rice 200g,Snacks & Branded Foods,Instant Food,220
+P01132,Smart Apple 500ml,Dairy & Bakery,Cakes,140
+P01133,Daily Shampoo 6 pcs,Baby Care,Baby Food,640
+P01134,Metro Toothpaste 200g,Fruits & Vegetables,Herbs,230
+P01135,Green Apple 200g,Fruits & Vegetables,Fresh Fruits,280
+P01136,Happy Namkeen 6 pcs,Baby Care,Diapers,380
+P01137,Daily Coffee 1L,Personal Care,Deos & Perfumes,590
+P01138,Smart Tea 200g,Personal Care,Deos & Perfumes,160
+P01139,Good Namkeen 6 pcs,Fruits & Vegetables,Herbs,250
+P01140,Pure Dishwash 2kg,Fruits & Vegetables,Fresh Vegetables,200
+P01141,Smart Curd 200g,Snacks & Branded Foods,Biscuits & Cookies,110
+P01142,Green Chocolate 2kg,Beverages,Energy Drinks,60
+P01143,Metro Toor Dal 200g,Fruits & Vegetables,Herbs,30
+P01144,Green Tea 1kg,Fruits & Vegetables,Fresh Fruits,300
+P01145,Pure Almonds 2kg,Dairy & Bakery,Cakes,210
+P01146,Good Milk 200g,Fruits & Vegetables,Fresh Fruits,150
+P01147,Green Toor Dal 1kg,Fruits & Vegetables,Fresh Fruits,40
+P01148,Green Potato 12 pcs,Dairy & Bakery,Paneer,190
+P01149,Quick Juice 500ml,Household,Cleaning Supplies,160
+P01150,Pure Namkeen 500g,Personal Care,Oral Care,390
+P01151,Good Cookies 200g,Household,Cleaning Supplies,40
+P01152,Pure Banana 12 pcs,Baby Care,Diapers,650
+P01153,Fresh Floor Cleaner 500g,Personal Care,Deos & Perfumes,230
+P01154,Happy Namkeen 2kg,Grocery & Staples,Dry Fruits,170
+P01155,Smart Shampoo 500g,Household,Disposables,140
+P01156,Urban Curd 1L,Dairy & Bakery,Breads,150
+P01157,Fresh Basmati Rice 1kg,Beverages,Soft Drinks,250
+P01158,Green Chocolate 12 pcs,Household,Disposables,150
+P01159,Metro Toothpaste 500g,Snacks & Branded Foods,Biscuits & Cookies,80
+P01160,Metro Curd 1kg,Fruits & Vegetables,Fresh Fruits,190
+P01161,Good Coffee 12 pcs,Household,Laundry,240
+P01162,Urban Atta 500g,Dairy & Bakery,Breads,210
+P01163,Pure Floor Cleaner 500ml,Personal Care,Deos & Perfumes,560
+P01164,Smart Curd 500ml,Snacks & Branded Foods,Biscuits & Cookies,100
+P01165,Good Cookies 1kg,Snacks & Branded Foods,Instant Food,80
+P01166,Fresh Floor Cleaner 500g,Snacks & Branded Foods,Chips & Namkeen,50
+P01167,Green Toothpaste 500g,Dairy & Bakery,Curd & Yogurt,290
+P01168,Daily Basmati Rice 1kg,Personal Care,Skin Care,510
+P01169,Daily Bread 1kg,Beverages,Energy Drinks,180
+P01170,Green Bread 200g,Grocery & Staples,Atta & Flour,120
+P01171,Urban Coffee 500g,Baby Care,Baby Skin Care,500
+P01172,Urban Tea 1L,Beverages,Juices,210
+P01173,Green Chocolate 6 pcs,Fruits & Vegetables,Fresh Fruits,270
+P01174,Smart Bread 500g,Baby Care,Diapers,150
+P01175,Green Potato 500ml,Household,Disposables,300
+P01176,Pure Cashew 12 pcs,Baby Care,Baby Food,290
+P01177,Green Banana 200g,Household,Laundry,290
+P01178,Daily Cookies 12 pcs,Baby Care,Diapers,690
+P01179,Green Chocolate 1kg,Snacks & Branded Foods,Chips & Namkeen,130
+P01180,Pure Cookies 500ml,Grocery & Staples,Atta & Flour,570
+P01181,Smart Namkeen 12 pcs,Household,Laundry,380
+P01182,Happy Eggs 2kg,Dairy & Bakery,Paneer,210
+P01183,Good Almonds 500g,Personal Care,Deos & Perfumes,100
+P01184,Urban Cookies 1kg,Beverages,Energy Drinks,100
+P01185,Urban Milk 6 pcs,Household,Laundry,330
+P01186,Good Almonds 2kg,Dairy & Bakery,Paneer,70
+P01187,Metro Eggs 500g,Fruits & Vegetables,Herbs,80
+P01188,Good Juice 1kg,Snacks & Branded Foods,Chips & Namkeen,160
+P01189,Pure Atta 500ml,Grocery & Staples,Dal & Pulses,260
+P01190,Fresh Dishwash 1kg,Baby Care,Baby Food,300
+P01191,Quick Dishwash 12 pcs,Grocery & Staples,Atta & Flour,110
+P01192,Fresh Namkeen 500ml,Baby Care,Baby Skin Care,490
+P01193,Happy Toothpaste 500g,Personal Care,Hair Care,90
+P01194,Metro Chocolate 200g,Snacks & Branded Foods,Biscuits & Cookies,130
+P01195,Daily Potato 1kg,Beverages,Tea & Coffee,40
+P01196,Good Apple 1kg,Grocery & Staples,Dry Fruits,160
+P01197,Quick Almonds 12 pcs,Snacks & Branded Foods,Instant Food,150
+P01198,Daily Banana 200g,Fruits & Vegetables,Fresh Fruits,150
+P01199,Daily Coffee 6 pcs,Household,Laundry,200
+P01200,Happy Tea 6 pcs,Fruits & Vegetables,Herbs,240
