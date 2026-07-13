@@ -79,14 +79,39 @@ This dataset combines order information from multiple quick-commerce platforms, 
 - Primary and foreign keys identified.
 - Marketing dataset will be used in Phase 2.
 - InventoryNew requires validation.
-- Dataset supports Delivery and Inventory domains.
+- delivery_status in order table `['On Time', 'Slightly Delayed', 'Significantly Delayed']` is different meaning from delivery table's delivery_status `['Delivered Late', 'Delivered On Time']`.
+- Need to convert delivery_status in order table into order_status.
 
 ### Cleaning Notes
 
 - Convert date columns to `datetime`
 - Validate primary key uniqueness
-- Standardize column names
+
 
 
 ## Zepto 
-processing
+ 
+
+| `Table`              | `Rows`| `Columns`| `PK `         | `FK`                | `Domain`    |`Decision`   |
+| -------------------- | ----- | -------  | -----------   | ------------------- | ---------   | ---------   |
+| Orders               | 20,000| 4        | order_id      | customer_id         | Delivery    | ✅         |
+| Customers            | 10,000| 8        | customer_id   | -                   | Customer    | ✅         |
+| Products             | 1200  | 5        | product_id    | -                   | Inventory   | ✅         |
+| Delivery             | 20,000| 5        | delivery_id   | order_id            | Delivery    | ✅         |
+| Rating               | 20,000| 4        | rating_id     | order_id            | Customer    | ✅         |
+|Transaction           | 50,000| 6        | transaction_id| order_id,product_id | Marketing   | ✅         |
+
+### Key Observations
+
+- Date columns are stored as string.
+- Primary and foreign keys identified.
+- order_id, customer_id , product_id , transaction_id, rating_id , delivery_id  all columns are in string datatype.
+- order_id are not same in other table (`delivery , rating , transcation`), 5000,7000 are not exist .
+- missing 5000 order_id in rating table and transaction table are same .
+
+### Cleaning Notes
+
+- Convert date columns to `datetime`
+- Convert order_id, customer_id , product_id , transaction_id, rating_id , delivery_id  all columns are into `Int`
+- Validate primary key uniqueness
+- Standardize column names and data value
