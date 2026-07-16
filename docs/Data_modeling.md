@@ -14,7 +14,7 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 
 ---
 
-## Orders
+# Orders
 
 ### Final Analytical Table
 
@@ -32,7 +32,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | warehouse_id | Blinkit (Store ID), Instamart (StoreID) | Link orders to warehouses/dark stores. |
 | customer_pincode | Blinkit | Hyperlocal and Bangalore area analysis. |
 
----
 
 ### Source-to-Target Mapping
 
@@ -50,7 +49,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | warehouse_id | store_id | NULL | StoreID | Rename |
 | customer_pincode | Available | NULL | NULL | Keep NULL if unavailable |
 
----
 
 ### Gap Analysis
 
@@ -63,7 +61,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Customer Pincode | Zepto, Instamart | Store as NULL |
 | Warehouse ID | Zepto | Store as NULL |
 
----
 
 ## Final Decision
 
@@ -72,8 +69,9 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 - Missing attributes will be stored as NULL where the source platform does not provide them.
 - This table is **Frozen (Version 1)** and will be used during the ETL phase.
 
+---
 
-## Products
+# Products
 
 ### Final Analytical Table
 
@@ -91,7 +89,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | reorder_level | Blinkit | Identify products requiring replenishment before stock-out. |
 | shelf_life_days | Blinkit | Support product freshness and expiry analysis. |
 
----
 
 ### Source-to-Target Mapping
 
@@ -109,7 +106,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | reorder_level | min_stock_level | NULL | NULL | Rename |
 | shelf_life_days | shelf_life_days | NULL | NULL | Rename |
 
----
 
 ### Gap Analysis
 
@@ -122,7 +118,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Reorder Level | Zepto, Instamart | Store as NULL |
 | Sub Category | Blinkit, Instamart | Store as NULL |
 
----
 
 ### Final Decision
 
@@ -134,7 +129,7 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 
 ---
 
-## Transaction
+# Transaction
 
 ### Final Analytical Table
 
@@ -150,7 +145,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | payment_method | Blinkit, Zepto, Instamart | Analyze customer payment preferences. |
 | discount_amount | Instamart | Analyze discount impact on sales. |
 
----
 
 ### Source-to-Target Mapping
 
@@ -166,7 +160,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | payment_method | Join from Orders | payment_mode | PaymentMethodID | Rename / Join |
 | discount_amount | NULL | NULL | DiscountApplied | Rename |
 
----
 
 ### Gap Analysis
 
@@ -178,7 +171,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Payment Method | Blinkit | Join with Orders table |
 | Discount Amount | Blinkit, Zepto | Store NULL |
 
----
 
 ### Final Decision
 
@@ -188,7 +180,8 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 - Status: ✅ Frozen (Version 1)
 
 ---
-## Delivery
+
+# Delivery
 
 ### Final Analytical Table
 
@@ -205,7 +198,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | delivery_status | All | Identify successful, delayed, cancelled, or failed deliveries. |
 | delay_reason | Blinkit | Identify operational reasons for delayed deliveries. |
 
----
 
 ### Source-to-Target Mapping
 
@@ -222,8 +214,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | delivery_status | delivery_status | delivery_status | OrderStatus | Standardize values |
 | delay_reason | reasons_if_delayed | NULL | NULL | Rename |
 
----
-
 ### Gap Analysis
 
 | Missing Information | Platform | Decision |
@@ -235,7 +225,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Distance | Instamart | Store NULL |
 | Delay Reason | Zepto, Instamart | Store NULL |
 
----
 
 ### Final Decision
 
@@ -244,8 +233,9 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 - Missing attributes will be stored as NULL where the source platform does not provide them.
 - The Quick Commerce dataset will **not** be used to fill missing delivery information because it has independent identifiers and cannot be reliably joined.
 - **Status:** ✅ Frozen (Version 1)
+---
 
-## Customers
+# Customers
 
 ### Final Analytical Table
 
@@ -265,7 +255,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | registration_date | All | Analyze customer acquisition trends. |
 | customer_segment | Blinkit, Instamart | Customer segmentation analysis. |
 
----
 
 ### Source-to-Target Mapping
 
@@ -285,7 +274,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | registration_date | registration_date | created_date | RegistrationDate | Rename + Convert to datetime |
 | customer_segment | customer_segment | NULL | CustomerSegment | Rename |
 
----
 
 ### Gap Analysis
 
@@ -300,7 +288,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Pincode | Zepto, Instamart | Store NULL |
 | Customer Segment | Zepto | Store NULL |
 
----
 
 ### Final Decision
 
@@ -312,7 +299,7 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 
 ---
 
-## Inventory
+# Inventory
 
 ### Final Analytical Table
 
@@ -328,8 +315,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | reorder_level | Blinkit | Identify products that require replenishment. |
 | stock_status | Zepto | Identify products that are in stock or out of stock. |
 
----
-
 ### Source-to-Target Mapping
 
 | Final Column | Blinkit | Zepto | Instamart | Transformation |
@@ -344,7 +329,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | reorder_level | min_stock_level (Products Table) | NULL | NULL | Join Products table |
 | stock_status | NULL | outOfStock | NULL | Convert Boolean to In Stock / Out of Stock |
 
----
 
 ### Gap Analysis
 
@@ -357,8 +341,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Available Quantity | Blinkit, Instamart | Store NULL |
 | Stock Status | Blinkit, Instamart | Store NULL |
 
----
-
 ### Final Decision
 
 - One row represents the inventory status of one product.
@@ -367,7 +349,9 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 - Missing attributes will be stored as NULL where unavailable.
 - **Status:** ✅ Frozen (Version 1)
 
-## Reviews
+---
+
+# Reviews
 
 ### Final Analytical Table
 
@@ -383,7 +367,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | sentiment | Blinkit | Analyze positive, neutral, and negative customer feedback. |
 | review_date | Blinkit | Analyze review trends over time. |
 
----
 
 ### Source-to-Target Mapping
 
@@ -399,7 +382,6 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | sentiment | sentiment | NULL | NULL | Rename |
 | review_date | feedback_date | NULL | NULL | Rename + Convert to datetime |
 
----
 
 ### Gap Analysis
 
@@ -411,9 +393,8 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | Review Date | Zepto, Instamart | Store NULL |
 | Complete Review Dataset | Instamart | Store NULL |
 
----
 
-### Final Decision
+###  Final Decision
 
 - One row represents one customer review for one completed order.
 - Reviews from Blinkit and Zepto will be standardized into a single analytical Reviews table.
