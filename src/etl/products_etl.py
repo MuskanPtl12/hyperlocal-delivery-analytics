@@ -2,6 +2,7 @@ import pandas as pd
 from src.config import RAW_DATA_PATH 
 from src.utils.file_loader import load_csv
 from src.schema import PRODUCTS_FINAL_COLUMNS
+from src.product_mapping import (SUBCATEGORY_KEYWORDS, CATEGORY_MAPPING )
 
 def load_products():
     zepto_product_path=RAW_DATA_PATH/"Zepto"/"zepto_product.csv"
@@ -128,108 +129,21 @@ def prepare_final_schema(zepto_df, blinkit_df, swiggy_df):
     return zepto_df, blinkit_df, swiggy_df
 
 def get_sub_category(product_name):
-    """
-    Identify the product sub-category based on keywords
-    present in the product name.
-    """
-
-    subcategory_keywords = {
-
-        "Flour": [
-            "whole wheat atta",
-            "atta",
-            "maida",
-            "besan",
-            "suji",
-            "rava",
-            "semolina",
-            "flour"
-        ],
-
-        "Rice": [
-            "brown rice",
-            "basmati",
-            "sona masoori",
-            "kolam",
-            "rice"
-        ],
-
-        "Pulses": [
-            "dal",
-            "lentil",
-            "chana",
-            "moong",
-            "urad",
-            "toor",
-            "masoor",
-            "rajma"
-        ],
-
-        "Edible Oil": [
-            "sunflower oil",
-            "mustard oil",
-            "groundnut oil",
-            "olive oil",
-            "coconut oil",
-            "soybean oil",
-            "oil"
-        ],
-
-        "Sugar": [
-            "brown sugar",
-            "sugar",
-            "jaggery"
-        ],
-
-        "Salt": [
-            "rock salt",
-            "sendha",
-            "salt",
-            "namak"
-        ],
-
-        "Spices": [
-            "garam masala",
-            "red chilli",
-            "turmeric",
-            "haldi",
-            "chilli",
-            "coriander",
-            "dhania",
-            "jeera",
-            "cumin",
-            "pepper"
-        ],
-
-        "Dry Fruits": [
-            "dry fruit",
-            "almonds",
-            "cashew",
-            "raisin",
-            "pista",
-            "walnut"
-        ]
-    }
 
     product_name = str(product_name).lower()
-
-    # Split into individual words
     words = product_name.split()
 
-    for sub_category, keywords in subcategory_keywords.items():
+    for sub_category, keywords in SUBCATEGORY_KEYWORDS.items():
 
-        # Check longer keywords first
         keywords = sorted(keywords, key=len, reverse=True)
 
         for keyword in keywords:
 
-            # Multi-word keyword
             if " " in keyword:
 
                 if keyword in product_name:
                     return sub_category
 
-            # Single-word keyword
             else:
 
                 if keyword in words:
@@ -237,26 +151,9 @@ def get_sub_category(product_name):
 
     return "Uncategorized"
 
-
 def get_category(sub_category):
-    """
-    Map sub-category to parent category.
-    """
 
-    category_mapping = {
-
-        "Flour": "Grocery & Staples",
-        "Rice": "Grocery & Staples",
-        "Pulses": "Grocery & Staples",
-        "Edible Oil": "Grocery & Staples",
-        "Sugar": "Grocery & Staples",
-        "Salt": "Grocery & Staples",
-        "Spices": "Grocery & Staples",
-        "Dry Fruits": "Grocery & Staples"
-
-    }
-
-    return category_mapping.get(sub_category, "Uncategorized")
+    return CATEGORY_MAPPING.get( sub_category, "Uncategorized" )
 
 def standardize_values(zepto_df, blinkit_df, swiggy_df):
     """
@@ -283,8 +180,29 @@ def standardize_values(zepto_df, blinkit_df, swiggy_df):
 
 def validate(zepto_df, blinkit_df, swiggy_df):
     
-    print(zepto_df.head(60))
-    return zepto_df, blinkit_df, swiggy_df
+    for platform, df in {
+    "Zepto": zepto_df,
+    "Blinkit": blinkit_df,
+    "Swiggy": swiggy_df}.items():
+
+        print(f"\n{platform}")
+        print("-" * 30)
+        print(df["category"].value_counts(dropna=False))
+    
+    for platform, df in {
+    "Zepto": zepto_df,
+    "Blinkit": blinkit_df,
+    "Swiggy": swiggy_df}.items():
+
+        print(f"\n===== {platform} =====")
+
+        uncategorized = df[df["category"] == "Uncategorized"]
+
+        print(uncategorized[[
+            "product_name",
+            "sub_category",
+            "category" ]])
+    # return zepto_df, blinkit_df, swiggy_df
 
 def main():
     
@@ -304,7 +222,7 @@ def main():
     
     zepto_df, blinkit_df, swiggy_df = standardize_values(zepto_df , blinkit_df, swiggy_df)
     
-    zepto_df, blinkit_df, swiggy_df = validate(zepto_df, blinkit_df, swiggy_df)
+    validate(zepto_df, blinkit_df, swiggy_df)
     
         
 
