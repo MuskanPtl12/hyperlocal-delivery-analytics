@@ -71,61 +71,72 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 
 ---
 
-# Products
+# Products Data Modeling
 
-### Final Analytical Table
+## Final Analytical Schema
 
-| Final Column | Source Platform | Business Purpose |
-|---------------|----------------|------------------|
-| platform | All | Identify the source platform for cross-platform comparison. |
-| product_id | All | Unique identifier for each product. |
-| product_name | All | Identify and compare products across platforms. |
-| category | All | Analyze product demand and category-wise sales performance. |
-| sub_category | Zepto, Instamart | Perform detailed product category analysis. |
-| brand | Blinkit | Compare branded and non-branded products across platforms. |
-| price | All | Analyze pricing differences across platforms. |
-| mrp | Blinkit | Measure discounts and customer savings. |
-| stock_quantity | Instamart | Monitor inventory availability and stock levels. |
-| reorder_level | Blinkit | Identify products requiring replenishment before stock-out. |
-| shelf_life_days | Blinkit | Support product freshness and expiry analysis. |
+| Final Column | Data Type | Business Purpose |
+|--------------|-----------|------------------|
+| platform | string | Identify the source platform. |
+| product_id | string | Unique product identifier. |
+| product_name | string | Identify the product. |
+| category | string | Category-wise analysis. |
+| sub_category | string | Detailed product grouping. |
+| brand | string | Brand-wise comparison. |
+| price | float64 | Selling price analysis. |
+| mrp | float64 | Discount analysis. |
+| shelf_life_days | Int64 | Product freshness analysis. |
 
 
-### Source-to-Target Mapping
+## Source → Target Transformation
 
-| Final Column | Blinkit | Zepto | Instamart | Transformation |
-|---------------|----------|--------|------------|----------------|
-| platform | ❌ | ❌ | ❌ | Add platform name during ETL |
-| product_id | product_id | product_id | ProductID | Rename |
-| product_name | product_name | product_name | ProductName | Rename |
-| category | category | category | CategoryID | Replace CategoryID with Category Name using Categories table |
-| sub_category | NULL | sub_category | NULL | Keep NULL where unavailable |
-| brand | brand | NULL | NULL | Keep NULL where unavailable |
-| price | price | price | UnitPrice | Rename |
-| mrp | mrp | NULL | NULL | Keep NULL where unavailable |
-| stock_quantity | NULL | NULL | StockQuantity | Rename |
-| reorder_level | min_stock_level | NULL | NULL | Rename |
-| shelf_life_days | shelf_life_days | NULL | NULL | Rename |
+| Final Column | Blinkit | Zepto | Swiggy | ETL Action |
+|---------------|----------|--------|---------|------------|
+| platform | ❌ | ❌ | ❌ | Add platform name |
+| product_id | product_id | product_id | ProductID | Rename `ProductID`, convert to string |
+| product_name | product_name | product_name | ProductName | Rename `ProductName` |
+| category | category | category | CategoryID | Replace `CategoryID` using Categories table, then standardize values |
+| sub_category | NULL | sub_category | NULL | Create business sub-category |
+| brand | brand | NULL | NULL | Keep, otherwise NULL |
+| price | price | price | UnitPrice | Rename `UnitPrice` |
+| mrp | mrp | NULL | NULL | Keep, otherwise NULL |
+| shelf_life_days | shelf_life_days | NULL | NULL | Keep, otherwise NULL |
+| SupplierID | ❌ | ❌ | SupplierID | Remove (Inventory/Supplier) |
+| StockQuantity | ❌ | ❌ | StockQuantity | Remove (Inventory) |
+| MinStockLevel | MinStockLevel | ❌ | ❌ | Remove (Inventory) |
+| MaxStockLevel | MaxStockLevel | ❌ | ❌ | Remove (Inventory) |
+| margin_percentage | margin_percentage | ❌ | ❌ | Exclude (Business meaning not confirmed) |
+
+## Category & Sub-category Standardization
+
+| Final Category | Final Sub-categories |
+|----------------|----------------------|
+| Fruits & Vegetables | Fruits, Vegetables, Herbs |
+| Grocery & Staples | Rice, Flour, Pulses, Edible Oil, Sugar, Salt, Spices, Dry Fruits |
+| Dairy & Breakfast | Milk, Curd, Butter & Ghee, Cheese, Bread, Eggs, Breakfast Cereals |
+| Snacks & Beverages | Biscuits, Chips, Chocolates, Soft Drinks, Juices, Tea, Coffee |
+| Instant & Frozen Foods | Frozen Food, Ready to Cook, Ready to Eat, Instant Noodles |
+| Personal Care | Soap & Body Wash, Shampoo, Hair Care, Skin Care, Oral Care, Baby Care |
+| Household | Detergent, Dishwash, Floor Cleaner, Toilet Cleaner, Garbage Bags, Air Fresheners, Paper Products |
+| Pharmacy & Wellness | Pharmacy & Wellness |
+| Pet Care | Pet Care |
 
 
-### Gap Analysis
-
-| Missing Information | Platform | Decision |
-|---------------------|----------|----------|
-| Brand | Zepto, Instamart | Store as NULL |
-| MRP | Zepto, Instamart | Store as NULL |
-| Stock Quantity | Blinkit, Zepto | Store as NULL |
-| Shelf Life | Zepto, Instamart | Store as NULL |
-| Reorder Level | Zepto, Instamart | Store as NULL |
-| Sub Category | Blinkit, Instamart | Store as NULL |
-
-
-### Final Decision
+### Other
 
 - One row represents one unique product.
-- Products from all supported platforms will be standardized into a single analytical Products table.
-- Category IDs will be replaced with category names during ETL wherever lookup tables are available.
-- Missing attributes will be stored as NULL if the source platform does not provide them.
-- **Status:** ✅ Frozen (Version 1)
+- Store unavailable attributes as `NULL`.
+- Convert all column names to `snake_case`.
+- Remove columns that belong to Inventory or Supplier entities.
+
+### Category Lookup (Swiggy)
+
+- Swiggy Products table stores `CategoryID` instead of `Category Name`.
+- Load the `Categories` lookup table before product transformation.
+- Join the Products table with the Categories table using `CategoryID`.
+- Replace `CategoryID` with the corresponding `Category Name`.
+- Remove `CategoryID` after the lookup is completed.
+- Perform all further transformations using `Category Name`.
 
 ---
 
