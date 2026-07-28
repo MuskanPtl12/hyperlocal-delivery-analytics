@@ -24,3 +24,17 @@ ORDERS_FINAL_COLUMNS = [
     "payment_method_id",
     "time_of_day",
 ]
+
+PRODUCTS_FINAL_COLUMNS=[
+    "platform",
+    "product_id",
+    "product_name",
+    "category",
+    "sub_category",
+    "brand",
+    "price",
+    "mrp",
+    "stock_quantity",
+    "reorder_level",
+    "shelf_life_days"
+]
