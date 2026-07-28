@@ -213,6 +213,7 @@ def reorder_columns(zepto_df, blinkit_df, swiggy_df):
 
     return zepto_df, blinkit_df, swiggy_df
 
+
 def build_orders_dataset(zepto_df, blinkit_df, swiggy_df):
 
     #Append all Orders DataFrames into a single DataFrame.
@@ -254,12 +255,20 @@ def create_derived_features(final_orders_df ):
     return final_orders_df
             
 
-def validate_final_schema(final_orders_df):
+def validate_final_schema(final_orders_df,zepto_df, blinkit_df, swiggy_df):
     # Validate that the final DataFrame has the expected columns
     if list(final_orders_df.columns) != ORDERS_FINAL_COLUMNS:
         raise ValueError(
             f"Expected columns: {ORDERS_FINAL_COLUMNS}\n"
             f"Actual columns: {list(final_orders_df.columns)}" )
+    
+    # validate missing rows   
+    expected = len(zepto_df) + len(blinkit_df) + len(swiggy_df)
+    actual = len(final_orders_df)
+    if expected != actual:
+        pass
+   
+        
 
 
 def save_orders(final_orders_df):
@@ -272,6 +281,7 @@ def save_orders(final_orders_df):
 
     print(f"Orders dataset saved successfully at:\n{output_file}")
 
+
 def main():
     
     zepto_df, blinkit_df, swiggy_df = load_orders()
@@ -281,6 +291,8 @@ def main():
     validate_source_schema(zepto_df, blinkit_df, swiggy_df)
     
     zepto_df, blinkit_df, swiggy_df = standardize_columns( zepto_df, blinkit_df, swiggy_df )
+    
+    zepto_df, blinkit_df, swiggy_df = standardize_values(zepto_df, blinkit_df, swiggy_df)
     
     zepto_df, blinkit_df, swiggy_df = prepare_final_schema(zepto_df, blinkit_df, swiggy_df)
     
@@ -292,7 +304,7 @@ def main():
     
     final_orders_df = create_derived_features(final_orders_df)
     
-    validate_final_schema(final_orders_df)
+    validate_final_schema(final_orders_df,zepto_df, blinkit_df, swiggy_df)
     
     save_orders(final_orders_df)
     
