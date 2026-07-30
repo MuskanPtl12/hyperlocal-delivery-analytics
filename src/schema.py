@@ -34,7 +34,5 @@ PRODUCTS_FINAL_COLUMNS=[
     "brand",
     "price",
     "mrp",
-    "stock_quantity",
-    "reorder_level",
     "shelf_life_days"
 ]
