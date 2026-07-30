@@ -2,7 +2,7 @@ import pandas as pd
 from src.config import RAW_DATA_PATH 
 from src.utils.file_loader import load_csv
 from src.schema import PRODUCTS_FINAL_COLUMNS
-from src.product_mapping import (SUBCATEGORY_KEYWORDS, CATEGORY_MAPPING )
+from src.product_mapping import (SUBCATEGORY_KEYWORDS, CATEGORY_MAPPING,PRODUCT_OVERRIDE )
 
 def load_products():
     zepto_product_path=RAW_DATA_PATH/"Zepto"/"zepto_product.csv"
@@ -155,6 +155,20 @@ def get_category(sub_category):
 
     return CATEGORY_MAPPING.get( sub_category, "Uncategorized" )
 
+def apply_product_override(df):
+    """
+    Override incorrect product classifications
+    using PRODUCT_OVERRIDE.
+    """
+    for product_name, mapping in PRODUCT_OVERRIDE.items():
+
+        mask = df["product_name"] == product_name
+
+        df.loc[mask, "sub_category"] = mapping["sub_category"]
+        df.loc[mask, "category"] = mapping["category"]
+
+    return df
+
 def standardize_values(zepto_df, blinkit_df, swiggy_df):
     """
     Standardize category and sub_category
@@ -163,46 +177,28 @@ def standardize_values(zepto_df, blinkit_df, swiggy_df):
     dataframes = [zepto_df, blinkit_df, swiggy_df]
 
     for df in dataframes:
-
-        # Update sub_category
+        
+        # Step 1: Classify sub_category
         df["sub_category"] = (
             df["product_name"]
-            .apply(get_sub_category)
-        )
+            .apply(get_sub_category)  )
 
-        # Update category
+        # Step 2: Map category
         df["category"] = (
             df["sub_category"]
-            .apply(get_category) 
-        )
+            .apply(get_category) )
+
+        # Step 3: Apply manual overrides
+        apply_product_override(df)
 
     return zepto_df, blinkit_df, swiggy_df
 
-def validate(zepto_df, blinkit_df, swiggy_df):
+# def validate(zepto_df, blinkit_df, swiggy_df):
     
-    for platform, df in {
-    "Zepto": zepto_df,
-    "Blinkit": blinkit_df,
-    "Swiggy": swiggy_df}.items():
-
-        print(f"\n{platform}")
-        print("-" * 30)
-        print(df["category"].value_counts(dropna=False))
+def validate_sub_category( zepto_df, blinkit_df, swiggy_df):
+    pass
     
-    for platform, df in {
-    "Zepto": zepto_df,
-    "Blinkit": blinkit_df,
-    "Swiggy": swiggy_df}.items():
 
-        print(f"\n===== {platform} =====")
-
-        uncategorized = df[df["category"] == "Uncategorized"]
-
-        print(uncategorized[[
-            "product_name",
-            "sub_category",
-            "category" ]])
-    # return zepto_df, blinkit_df, swiggy_df
 
 def main():
     
@@ -222,7 +218,8 @@ def main():
     
     zepto_df, blinkit_df, swiggy_df = standardize_values(zepto_df , blinkit_df, swiggy_df)
     
-    validate(zepto_df, blinkit_df, swiggy_df)
+    validate_sub_category(zepto_df,blinkit_df,swiggy_df )
+    
     
         
 
