@@ -2,6 +2,77 @@
     Identify the product sub-category based on keywords
     present in the product name.
     """
+# ==========================================================
+# PRODUCT OVERRIDE
+# ==========================================================
+
+PRODUCT_OVERRIDE = {
+
+    # Grocery & Staples
+    "Fresh Coriander Bunch": {
+        "sub_category": "Herbs",
+        "category": "Fruits & Vegetables"
+    },
+
+    "Good Day Cashew Cookies": {
+        "sub_category": "Biscuits",
+        "category": "Snacks & Beverages"
+    },
+
+    # Fruits & Vegetables
+    "Mango Drink": {
+        "sub_category": "Juices",
+        "category": "Snacks & Beverages"
+    },
+
+    "Orange Juice": {
+        "sub_category": "Juices",
+        "category": "Snacks & Beverages"
+    },
+
+    "Tropicana 100% Orange Juice 1L": {
+        "sub_category": "Juices",
+        "category": "Snacks & Beverages"
+    },
+
+    "Parachute Coconut Oil 500ml": {
+        "sub_category": "Hair Care",
+        "category": "Personal Care"
+    },
+
+    "Vim Dishwash Bar Lemon": {
+        "sub_category": "Dishwash",
+        "category": "Household"
+    },
+
+    "Listerine Cool Mint Mouthwash 250ml": {
+        "sub_category": "Oral Care",
+        "category": "Personal Care"
+    },
+
+    # Dairy & Breakfast
+    "Britannia Milk Bread": {
+        "sub_category": "Bread",
+        "category": "Dairy & Breakfast"
+    },
+
+    "Cadbury Dairy Milk Silk 150g": {
+        "sub_category": "Chocolates",
+        "category": "Snacks & Beverages"
+    },
+
+    "Drools Adult Dog Food Chicken & Egg 3kg": {
+        "sub_category": "Pet Food",
+        "category": "Pet Care"
+    },
+
+    # Snacks & Beverages
+    "Balaji Wafers Simply Salted": {
+        "sub_category": "Chips",
+        "category": "Snacks & Beverages"
+    }
+}
+
 
 SUBCATEGORY_KEYWORDS = {
 "Flour": [
@@ -41,9 +112,8 @@ SUBCATEGORY_KEYWORDS = {
     "mustard oil",
     "groundnut oil",
     "olive oil",
-    "coconut oil",
     "soybean oil",
-    "oil"
+    "refined oil",
     ],
 
 "Sugar": [
@@ -62,17 +132,19 @@ SUBCATEGORY_KEYWORDS = {
 
 "Spices": [
     "garam masala",
-    "red chilli",
+    "red chilli powder",
+    "turmeric powder",
     "turmeric",
     "haldi",
-    "chilli",
+    "chilli powder",
+    "coriander powder",
     "coriander",
+    "dhania powder",
     "dhania",
     "jeera",
     "cumin",
     "pepper",
-    "magic masala",
-    "masala","mdh", "deggi", "deggi mirch","baking powder",
+    "mdh", "deggi", "deggi mirch","baking powder",
     ],
 
 "Baby Food": ["baby food"],
@@ -83,7 +155,8 @@ SUBCATEGORY_KEYWORDS = {
 
 "Dry Fruits": [
     "dry fruit",
-    "almonds",
+    "almonds ",
+    "cashew nuts",
     "cashew",
     "raisin",
     "pista",
@@ -184,6 +257,7 @@ SUBCATEGORY_KEYWORDS = {
 
 "Herbs": [
 
+    "fresh coriander bunch",
     "coriander",
     "coriander leaves",
     "cilantro",
@@ -309,6 +383,7 @@ SUBCATEGORY_KEYWORDS = {
 
 "Chips": [
 
+    "kurkure",
     "chips",
     "nachos",
     "popcorn",
@@ -318,7 +393,7 @@ SUBCATEGORY_KEYWORDS = {
     "sev",
     "mixture",
     "namkeen","bingo", "mad angles","uncle chipps",
-    "bhel","too yumm", "karare",
+    "bhel","too yumm", "karare","wafer","wafers",
 ],
 
 
@@ -330,9 +405,6 @@ SUBCATEGORY_KEYWORDS = {
     "candies",
     "toffee",
     "toffees",
-    "wafer",
-    "wafers",
-    "bar",
     "cocoa","cadbury","dairy milk", "5 star",
     "perk","fuse","gems"
 ],
@@ -444,84 +516,6 @@ SUBCATEGORY_KEYWORDS = {
     "sevai"
 ],
 
-
-# ============================================================
-# Personal Care
-# ============================================================
-
-"Soap & Body Wash": [
-
-    "soap",
-    "soaps",
-    "body wash",
-    "shower gel",
-    "hand wash"
-],
-
-
-"Shampoo": [
-
-    "shampoo",
-    "conditioner",
-    "hair cleanser"
-],
-
-
-"Hair Care": [
-
-    "hair oil",
-    "hair serum",
-    "hair mask",
-    "hair cream",
-    "hair color",
-    "hair gel",
-    
-],
-
-"Deodorant" :[
-    "deodorant", "deo",
-],
-
-"Skin Care": [
-
-    "face wash",
-    "face cream",
-    "moisturizer",
-    "lotion",
-    "sunscreen",
-    "sun cream",
-    "serum",
-    "scrub",
-    "lip balm","hair removal cream", "veet","razor", "shaving"
-],
-
-"Feminine Hygiene": [
-    "sanitary pad", "pads", "stayfree"
-    ],
-
-"Oral Care": [
-
-    "toothpaste",
-    "tooth brush",
-    "toothbrush",
-    "mouthwash",
-    "dental floss"
-],
-
-
-"Baby Care": [
-
-    "baby lotion",
-    "baby soap",
-    "baby shampoo",
-    "baby powder",
-    "baby oil",
-    "baby wipes",
-    "diaper",
-    "diapers","huggies", "wonder pants"
-],
-
-
 # ============================================================
 # Household
 # ============================================================
@@ -540,7 +534,7 @@ SUBCATEGORY_KEYWORDS = {
 
 
 "Dishwash": [
-
+    "dish soap",
     "dishwash",
     "dish wash",
     "dish cleaner",
@@ -606,6 +600,83 @@ SUBCATEGORY_KEYWORDS = {
     "refill" ,"baygon", "insect killer",
     ],
 
+
+
+# ============================================================
+# Personal Care
+# ============================================================
+
+"Soap & Body Wash": [
+
+    "soap",
+    "soaps",
+    "body wash",
+    "shower gel",
+    "hand wash"
+],
+
+
+"Shampoo": [
+
+    "shampoo",
+    "conditioner",
+    "hair cleanser"
+],
+
+
+"Hair Care": [
+
+    "hair oil",
+    "hair serum",
+    "hair mask",
+    "hair cream",
+    "hair color",
+    "hair gel","coconut oil",
+    
+],
+
+"Deodorant" :[
+    "deodorant", "deo",
+],
+
+"Skin Care": [
+
+    "face wash",
+    "face cream",
+    "moisturizer",
+    "lotion",
+    "sunscreen",
+    "sun cream",
+    "serum",
+    "scrub",
+    "lip balm","hair removal cream", "veet","razor", "shaving"
+],
+
+"Feminine Hygiene": [
+    "sanitary pad", "pads", "stayfree"
+    ],
+
+"Oral Care": [
+
+    "toothpaste",
+    "tooth brush",
+    "toothbrush",
+    "mouthwash",
+    "dental floss"
+],
+
+
+"Baby Care": [
+
+    "baby lotion",
+    "baby soap",
+    "baby shampoo",
+    "baby powder",
+    "baby oil",
+    "baby wipes",
+    "diaper",
+    "diapers","huggies", "wonder pants"
+],
 
 # ============================================================
 # Pharmacy & Wellness
@@ -730,3 +801,4 @@ CATEGORY_MAPPING = {
     # Pet Care
     "Pet Care": "Pet Care"
 }
+
