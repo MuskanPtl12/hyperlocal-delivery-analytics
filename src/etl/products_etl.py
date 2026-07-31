@@ -193,10 +193,17 @@ def standardize_values(zepto_df, blinkit_df, swiggy_df):
 
     return zepto_df, blinkit_df, swiggy_df
 
+def standardize_data_types(zepto_df, blinkit_df, swiggy_df):
+    # string_column=[]
+    pass
+
+
 # def validate(zepto_df, blinkit_df, swiggy_df):
     
 def validate_sub_category( zepto_df, blinkit_df, swiggy_df):
-    pass
+    print(zepto_df.columns)
+    print(blinkit_df.columns)
+    print(swiggy_df.columns)
     
 
 
@@ -217,6 +224,8 @@ def main():
     zepto_df, blinkit_df, swiggy_df = prepare_final_schema(zepto_df, blinkit_df, swiggy_df)
     
     zepto_df, blinkit_df, swiggy_df = standardize_values(zepto_df , blinkit_df, swiggy_df)
+    
+    zepto_df, blinkit_df, swiggy_df = standardize_data_types(zepto_df, blinkit_df, swiggy_df)
     
     validate_sub_category(zepto_df,blinkit_df,swiggy_df )
     

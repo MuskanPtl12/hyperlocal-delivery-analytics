@@ -266,10 +266,8 @@ def validate_final_schema(final_orders_df,zepto_df, blinkit_df, swiggy_df):
     expected = len(zepto_df) + len(blinkit_df) + len(swiggy_df)
     actual = len(final_orders_df)
     if expected != actual:
-        pass
-   
-        
-
+        raise ValueError(
+            f"Row count mismatch. Expected {expected} rows but found {actual}." )
 
 def save_orders(final_orders_df):
     """
