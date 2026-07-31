@@ -18,8 +18,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Data (processed only)
-data/processed/
+# # Data (processed only)
+# data/processed/
 
 # Power BI cache
 *.pbix.autorecovery
