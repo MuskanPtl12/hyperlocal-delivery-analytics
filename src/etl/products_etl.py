@@ -1,5 +1,6 @@
 import pandas as pd
 from src.config import RAW_DATA_PATH 
+from src.config import PROCESSED_DATA_PATH, PRODUCTS_FILE
 from src.utils.file_loader import load_csv
 from src.schema import PRODUCTS_FINAL_COLUMNS
 from src.product_mapping import (SUBCATEGORY_KEYWORDS, CATEGORY_MAPPING,PRODUCT_OVERRIDE )
@@ -101,7 +102,7 @@ def standardize_columns(zepto_df, blinkit_df, swiggy_df):
         columns = {
             'ProductID':"product_id",
             'ProductName':"product_name",
-            'UnitPrice' : "unit_price",
+            'UnitPrice' : "price",
             'CategoryName' : 'category',
             "Subcategory" : 'sub_category',}
         ,inplace=True)
@@ -194,17 +195,70 @@ def standardize_values(zepto_df, blinkit_df, swiggy_df):
     return zepto_df, blinkit_df, swiggy_df
 
 def standardize_data_types(zepto_df, blinkit_df, swiggy_df):
-    # string_column=[]
-    pass
-
-
-# def validate(zepto_df, blinkit_df, swiggy_df):
     
-def validate_sub_category( zepto_df, blinkit_df, swiggy_df):
-    print(zepto_df.columns)
-    print(blinkit_df.columns)
-    print(swiggy_df.columns)
+    columns={
+        "string_columns" :["product_id","brand"],
+        
+        "int_columns" : ["shelf_life_days"] ,
+        
+        "float_columns" : ["price","mrp"]}
     
+    dataframes = [zepto_df, blinkit_df, swiggy_df]
+    
+    for platform_df in dataframes:
+        
+        for dtypee , column in columns.items():
+            
+            if dtypee=="string_columns":
+                platform_df[column] = platform_df[column].astype(str)
+            
+            elif dtypee=="int_columns":
+                platform_df[column] = platform_df[column].apply( pd.to_numeric, errors="coerce" ).astype("Int64")
+                            
+            elif dtypee=="float_columns":
+                platform_df[column] = platform_df[column].apply( pd.to_numeric, errors="coerce" ).astype("Float64")
+            
+    return zepto_df,blinkit_df,swiggy_df
+
+def reorder_columns(zepto_df, blinkit_df, swiggy_df):
+
+    zepto_df = zepto_df[PRODUCTS_FINAL_COLUMNS]
+    blinkit_df = blinkit_df[PRODUCTS_FINAL_COLUMNS]
+    swiggy_df = swiggy_df[PRODUCTS_FINAL_COLUMNS]
+
+    return zepto_df, blinkit_df, swiggy_df
+
+def build_products_dataset(zepto_df, blinkit_df, swiggy_df):
+
+    #Append all Orders DataFrames into a single DataFrame.
+    
+    final_products_df = pd.concat([zepto_df, blinkit_df, swiggy_df], ignore_index=True)
+    
+    return final_products_df 
+
+def validate_final_schema(final_products_df,zepto_df, blinkit_df, swiggy_df):
+    # Validate that the final DataFrame has the expected columns
+    if list(final_products_df.columns) != PRODUCTS_FINAL_COLUMNS:
+        raise ValueError(
+            f"Expected columns: {PRODUCTS_FINAL_COLUMNS}\n"
+            f"Actual columns: {list(final_products_df.columns)}" )
+        
+    # validate missing rows   
+    expected = len(zepto_df) + len(blinkit_df) + len(swiggy_df)
+    actual = len(final_products_df)
+    if expected != actual:
+        raise ValueError(
+            f"Row count mismatch. Expected {expected} rows but found {actual}." )
+    
+def save_orders(final_products_df):
+    """
+    Save the cleaned products dataset.
+    """
+    output_file = PROCESSED_DATA_PATH / PRODUCTS_FILE
+
+    final_products_df.to_csv( output_file, index=False )
+
+    print(f"Products dataset saved successfully at:\n{output_file}")
 
 
 def main():
@@ -227,10 +281,14 @@ def main():
     
     zepto_df, blinkit_df, swiggy_df = standardize_data_types(zepto_df, blinkit_df, swiggy_df)
     
-    validate_sub_category(zepto_df,blinkit_df,swiggy_df )
+    zepto_df, blinkit_df, swiggy_df = reorder_columns(zepto_df, blinkit_df, swiggy_df)
     
+    final_products_df = build_products_dataset(zepto_df, blinkit_df, swiggy_df)
     
-        
+    validate_final_schema(final_products_df,zepto_df, blinkit_df, swiggy_df)
+    
+    save_orders(final_products_df)
+    
 
 if __name__ == "__main__":
     main()
