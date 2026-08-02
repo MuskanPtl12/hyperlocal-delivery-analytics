@@ -36,3 +36,22 @@ PRODUCTS_FINAL_COLUMNS=[
     "mrp",
     "shelf_life_days"
 ]
+
+# ==========================================================
+# Delivery Final Schema
+# ==========================================================
+
+DELIVERY_FINAL_COLUMNS = [
+
+    "platform",
+    "delivery_id",
+    "delivery_partner_id",
+    "order_id",
+    "delivery_time_minutes",
+    "distance_km",
+    "delivery_status",
+    "actual_delivery_datetime",
+    "promised_delivery_datetime",
+    "delay_reason"
+
+]
