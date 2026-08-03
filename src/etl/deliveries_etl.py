@@ -24,21 +24,13 @@ def validate_deliveries(zepto_df,blinkit_df,blinkit_order_df,swiggy_df):
     "Blinkit Orders": blinkit_order_df,
     "Swiggy": swiggy_df,}
     
-    
+    # Validate that all DataFrames are not empty
     for platform ,platform_df in datasets.items():
         if platform_df.empty:
             raise ValueError(f"{platform} deliveries DataFrame is empty.")
         
-# def add_details(blinkit_df, blinkit_order_df):
-    
-#     # add order_date by merge blinkit_delivery_performance and blinkit_orders table
-#     blinkit_df = blinkit_df.merge( blinkit_order_df, on="order_id", how="left" )
-   
-#     return blinkit_df
-        
-
-        
 def validate_source_schema(zepto_df, blinkit_df,blinkit_order_df, swiggy_df):
+    
     zepto_required_columns =[
         "delivery_id",
         "order_id",
@@ -124,7 +116,7 @@ def standardize_column_names(zepto_df, blinkit_df, swiggy_df):
         "DeliveryPartnerID": "delivery_partner_id",  
         "DeliveryDate": "actual_delivery_datetime", 
         "DeliveryTimeMinutes": "delivery_time_minutes", 
-        "OrderStatus": "delivery_status"
+        "OrderStatus": "order_status"
     })
 
     return zepto_df, blinkit_df, swiggy_df
@@ -134,11 +126,14 @@ def update_deliverytime_minutes(blinkit_df):
     datetime_columns = [
     "order_date",
     "actual_delivery_datetime" ]
-
+    
+    # Convert the specified columns to datetime format
     blinkit_df[datetime_columns] = ( blinkit_df[datetime_columns] .apply(pd.to_datetime, errors="coerce"))
     
+    # Calculate delivery_time_minutes as the difference between actual_delivery_datetime and order_date in minutes
     blinkit_df["delivery_time_minutes"] = (blinkit_df["actual_delivery_datetime"] - blinkit_df["order_date"]).dt.total_seconds().div(60).round().astype("Int64")
     
+    # Drop the order_date column as it is no longer needed
     blinkit_df = blinkit_df.drop(columns=["order_date"])
     
     return blinkit_df
@@ -163,58 +158,126 @@ def prepare_final_schema(zepto_df, blinkit_df, swiggy_df):
    
     return zepto_df, blinkit_df, swiggy_df
 
-def standardize_values(zepto_df , blinkit_df, swiggy_df):
-    # Standardize values for Zepto
-    zepto_df["delivery_status"] = zepto_df["delivery_status"].replace({
-        "Delivered": "Delivered",
-        "Not Delivered": "Not Delivered"
-    })
+def standardize_values(zepto_df , blinkit_df):
     
-    # Standardize values for Blinkit
-    blinkit_df["delivery_status"] = blinkit_df["delivery_status"].replace({
-        "Delivered": "Delivered",
-        "Not Delivered": "Not Delivered"
-    })
+    DELIVERY_STATUS_MAPPING = {
+    # Blinkit
+    "On Time": "On Time",
+    "Slightly Delayed": "Slightly Delayed",
+    "Significantly Delayed": "Late",
+
+    # Zepto
+    "Delivered On Time": "On Time",
+    "Delivered Late": "Late"  }
     
-    # Standardize values for Swiggy
-    swiggy_df["delivery_status"] = swiggy_df["delivery_status"].replace({
-        "Delivered": "Delivered",
-        "Not Delivered": "Not Delivered"
-    })
+    # Standardize delivery_status values for Zepto and Blinkit
+    blinkit_df["delivery_status"] = blinkit_df["delivery_status"].map(DELIVERY_STATUS_MAPPING).fillna(blinkit_df["delivery_status"])
+    
+    # Standardize delivery_status values for Zepto 
+    zepto_df["delivery_status"] = zepto_df["delivery_status"].map(DELIVERY_STATUS_MAPPING).fillna(zepto_df["delivery_status"])
+    
+    return zepto_df, blinkit_df
+
+def reorder_columns(zepto_df, blinkit_df, swiggy_df):
+
+    zepto_df = zepto_df[DELIVERY_FINAL_COLUMNS]
+    blinkit_df = blinkit_df[DELIVERY_FINAL_COLUMNS]
+    swiggy_df = swiggy_df[DELIVERY_FINAL_COLUMNS]
 
     return zepto_df, blinkit_df, swiggy_df
+
+def standardize_datetype(zepto_df, blinkit_df, swiggy_df):
+    columns= {
+        "string_columns" :["delivery_id","delivery_partner_id","order_id","delivery_status","order_status","delay_reason"],
+        
+        "int_columns" : ["delivery_time_minutes"],
+        
+        "float_columns" : ["distance_km"] ,
+        
+        "datetime_columns" : ["actual_delivery_datetime","promised_delivery_datetime"]  }
     
-def validate(zepto_df, blinkit_df, swiggy_df):
-    datasets = {
-        "Zepto": zepto_df,
-        "Blinkit": blinkit_df,
-        "Swiggy": swiggy_df,
-        }
-    for platform, platform_df in datasets.items():
-        print(sorted(platform_df["delivery_status"].unique()))
-        print(8*"___________")
+    dataframes = [zepto_df, blinkit_df, swiggy_df]
+    
+    # Standardize data types for each DataFrame based on the specified columns
+    for platform_df in dataframes:
+    
+        for dtypee , column in columns.items():
+            
+            if dtypee=="string_columns":
+                platform_df[column] = platform_df[column].astype(str)
+            
+            elif dtypee=="int_columns":
+                platform_df[column] = platform_df[column].apply( pd.to_numeric, errors="coerce" ).astype("Int64")
+                            
+            elif dtypee=="float_columns":
+                platform_df[column] = platform_df[column].apply( pd.to_numeric, errors="coerce" ).astype("Float64")
+                
+            elif dtypee=="datetime_columns":
+                platform_df[column] = platform_df[column].apply(pd.to_datetime, errors="coerce")
+            
+    return zepto_df,blinkit_df,swiggy_df
+
+def build_delivery_dataset(zepto_df, blinkit_df, swiggy_df):
+
+    #Append all Orders DataFrames into a single DataFrame.
+    
+    final_delivery_df = pd.concat([zepto_df, blinkit_df, swiggy_df], ignore_index=True)
+    
+    return final_delivery_df
+
+def validate_final_schema(final_delivery_df,zepto_df, blinkit_df, swiggy_df):
+    
+    # Validate that the final DataFrame has the expected columns
+    if list(final_delivery_df.columns) != DELIVERY_FINAL_COLUMNS:
+        raise ValueError(
+            f"Expected columns: {DELIVERY_FINAL_COLUMNS}\n"
+            f"Actual columns: {list(final_delivery_df.columns)}" )
+        
+    # validate missing rows   
+    expected = len(zepto_df) + len(blinkit_df) + len(swiggy_df)
+    actual = len(final_delivery_df)
+    if expected != actual:
+        raise ValueError(
+            f"Row count mismatch. Expected {expected} rows but found {actual}." )
+    
+def save_orders(final_delivery_df):
+    """
+    Save the cleaned delivery dataset.
+    """
+    output_file = PROCESSED_DATA_PATH / DELIVERIES_FILE
+
+    final_delivery_df.to_csv( output_file, index=False )
+
+    print(f"Delivery dataset saved successfully at:\n{output_file}")
         
         
 def main():
+    
     zepto_df, blinkit_df,blinkit_order_df, swiggy_df = load_deliveries()
     
     validate_deliveries(zepto_df, blinkit_df,blinkit_order_df, swiggy_df)
     
-    # blinkit_df,blinkit_order_df =add_details(blinkit_df, blinkit_order_df)
-    
     validate_source_schema(zepto_df, blinkit_df,blinkit_order_df, swiggy_df)
     
-    blinkit_df  =add_details(blinkit_df, blinkit_order_df)
+    blinkit_df  = add_details(blinkit_df, blinkit_order_df)
     
     zepto_df, blinkit_df, swiggy_df = standardize_column_names(zepto_df, blinkit_df, swiggy_df)
     
     blinkit_df = update_deliverytime_minutes(blinkit_df)
     
-    zepto_df, blinkit_df, swiggy_df= prepare_final_schema(zepto_df, blinkit_df, swiggy_df)
+    zepto_df, blinkit_df, swiggy_df = prepare_final_schema(zepto_df, blinkit_df, swiggy_df)
     
-    # zepto_df, blinkit_df, swiggy_df = standardize_values(zepto_df , blinkit_df, swiggy_df)
+    zepto_df, blinkit_df = standardize_values(zepto_df , blinkit_df)
     
-    validate(zepto_df, blinkit_df, swiggy_df)
+    zepto_df, blinkit_df, swiggy_df = reorder_columns(zepto_df, blinkit_df, swiggy_df)
+    
+    zepto_df, blinkit_df, swiggy_df = standardize_datetype(zepto_df, blinkit_df, swiggy_df)
+    
+    final_delivery_df = build_delivery_dataset(zepto_df, blinkit_df, swiggy_df)
+    
+    validate_final_schema(final_delivery_df, zepto_df, blinkit_df, swiggy_df)
+    
+    save_orders(final_delivery_df)
 
 if __name__ == "__main__":
     main()
