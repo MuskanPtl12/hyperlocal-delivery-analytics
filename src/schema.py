@@ -50,6 +50,7 @@ DELIVERY_FINAL_COLUMNS = [
     "delivery_time_minutes",
     "distance_km",
     "delivery_status",
+    "order_status",
     "actual_delivery_datetime",
     "promised_delivery_datetime",
     "delay_reason"
