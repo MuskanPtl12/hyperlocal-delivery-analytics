@@ -219,7 +219,9 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | delivery_id | NULL | delivery_id | NULL | Keep NULL where unavailable |
 | delivery_partner_id | delivery_partner_id | NULL | DeliveryPartnerID | Rename |
 | order_id | order_id | order_id | OrderID | Rename |
-| delivery_time_minutes | Calculate from Orders + Delivery tables | delivery_time_mins | DeliveryTimeMinutes  | Rename and Recalculate where required |
+| delivery_time_minutes
+
+ | Calculate from Orders + Delivery tables | delivery_time_mins | DeliveryTimeMinutes  | Rename and Recalculate where required |
 | distance_km | distance_km | distance_km | NULL | Rename / Keep NULL |
 | delivery_status | delivery_status | delivery_status | NULL | Standardize values |
 | order_status | NULL | NULL | OrderStatus | Rename|
