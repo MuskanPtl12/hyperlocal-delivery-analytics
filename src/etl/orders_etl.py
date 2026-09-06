@@ -10,17 +10,20 @@ from src.schema import ORDERS_FINAL_COLUMNS
 def load_orders():
     zepto_orders_path = RAW_DATA_PATH /"zepto"/"zepto_order.csv"
     blinkit_orders_path = RAW_DATA_PATH /"Blinkit"/"blinkit_orders.csv"
+    blinkit_orders2_path = RAW_DATA_PATH /"Blinkit"/"blinkit_order_items.csv"
     swiggy_orders_path = RAW_DATA_PATH /"swiggy instamart"/"swiggy_order.csv"
     zepto_df = load_csv(zepto_orders_path)
     blinkit_df = load_csv(blinkit_orders_path)
+    blinkit_df2 = load_csv(blinkit_orders2_path,usecols=["order_id","product_id","quantity"])
     swiggy_df = load_csv(swiggy_orders_path)
 
-    return zepto_df, blinkit_df, swiggy_df
+    return zepto_df, blinkit_df, blinkit_df2, swiggy_df
 
-def validate_orders(zepto_df, blinkit_df, swiggy_df):
+def validate_orders(zepto_df, blinkit_df, blinkit_df2, swiggy_df):
     datasets = {
     "Zepto": zepto_df,
     "Blinkit": blinkit_df,
+    "Blinkit Order Items": blinkit_df2,
     "Swiggy": swiggy_df, }
     
     # Validate that none of the DataFrames are empty
@@ -29,7 +32,7 @@ def validate_orders(zepto_df, blinkit_df, swiggy_df):
             raise ValueError(f"{name} orders DataFrame is empty.")
         
 
-def validate_source_schema(zepto_df, blinkit_df, swiggy_df):
+def validate_source_schema(zepto_df, blinkit_df, blinkit_df2, swiggy_df):
 
     zepto_required_columns = [
         "order_id",
@@ -49,6 +52,11 @@ def validate_source_schema(zepto_df, blinkit_df, swiggy_df):
         "payment_method",
         "delivery_partner_id",
         "store_id"
+    ]
+    blinkit2_required_columns = [
+        "order_id",
+        "product_id",
+        "quantity"
     ]
     
     swiggy_required_columns = [
@@ -78,7 +86,17 @@ def validate_source_schema(zepto_df, blinkit_df, swiggy_df):
     for column in swiggy_required_columns:
         if column not in swiggy_df.columns:
             raise ValueError(f"Swiggy DataFrame is missing required column: {column}")
-        
+    for column in blinkit2_required_columns:
+        if column not in blinkit_df2.columns:
+            raise ValueError(f"Blinkit Order Items DataFrame is missing required column: {column}")
+
+
+def add_product_id_to_blinkit(blinkit_df, blinkit_df2):
+    # Merge the two Blinkit DataFrames(orders1 , order_items) on 'order_id' to add 'product_id'
+    blinkit_df = pd.merge(blinkit_df, blinkit_df2, on='order_id', how='left')
+    
+    return blinkit_df   
+   
     
 def standardize_columns(zepto_df, blinkit_df, swiggy_df):
     """
@@ -157,6 +175,7 @@ def prepare_final_schema(zepto_df, blinkit_df, swiggy_df):
    
     return zepto_df, blinkit_df, swiggy_df
 
+
 def standardize_data_types(zepto_df, blinkit_df, swiggy_df):
     
     string_columns = [
@@ -165,19 +184,15 @@ def standardize_data_types(zepto_df, blinkit_df, swiggy_df):
     "customer_id",
     "product_id",
     "store_id",
-    "delivery_partner_id",
     "order_status",
     "payment_method_id",
     "time_of_day"  ]
     
     float_columns = [ "order_value","discount_applied" ]
     
-    int_columns = [ "quantity", "delivery_time_minutes" ]
+    int_columns = [ "quantity"]
 
-    datetime_columns = [
-    "order_datetime",
-    "promised_delivery_datetime",
-    "actual_delivery_datetime" ]
+    datetime_columns = ["order_datetime" ]
     
     dataframes = [zepto_df, blinkit_df, swiggy_df]
 
@@ -282,11 +297,13 @@ def save_orders(final_orders_df):
 
 def main():
     
-    zepto_df, blinkit_df, swiggy_df = load_orders()
+    zepto_df, blinkit_df,blinkit_df2, swiggy_df = load_orders()
     
-    validate_orders(zepto_df, blinkit_df, swiggy_df)
+    validate_orders(zepto_df, blinkit_df,blinkit_df2, swiggy_df)
     
-    validate_source_schema(zepto_df, blinkit_df, swiggy_df)
+    validate_source_schema(zepto_df, blinkit_df, blinkit_df2, swiggy_df)
+    
+    blinkit_df  = add_product_id_to_blinkit(blinkit_df, blinkit_df2)
     
     zepto_df, blinkit_df, swiggy_df = standardize_columns( zepto_df, blinkit_df, swiggy_df )
     
