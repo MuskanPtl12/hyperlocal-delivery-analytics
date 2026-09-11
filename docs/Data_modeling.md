@@ -219,9 +219,7 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 | delivery_id | NULL | delivery_id | NULL | Keep NULL where unavailable |
 | delivery_partner_id | delivery_partner_id | NULL | DeliveryPartnerID | Rename |
 | order_id | order_id | order_id | OrderID | Rename |
-| delivery_time_minutes
-
- | Calculate from Orders + Delivery tables | delivery_time_mins | DeliveryTimeMinutes  | Rename and Recalculate where required |
+| delivery_time_minutes | Calculate from Orders + Delivery tables | delivery_time_mins | DeliveryTimeMinutes  | Rename and Recalculate where required |
 | distance_km | distance_km | distance_km | NULL | Rename / Keep NULL |
 | delivery_status | delivery_status | delivery_status | NULL | Standardize values |
 | order_status | NULL | NULL | OrderStatus | Rename|
@@ -246,65 +244,64 @@ The data model will serve as the blueprint for the ETL pipeline and define:
 
 # Customers
 
-### Final Analytical Table
 
-| Final Column | Source Platform | Business Purpose |
-|---------------|----------------|------------------|
-| platform | All | Identify the source platform for cross-platform customer analysis. |
-| customer_id | All | Unique identifier for each customer. |
-| customer_name | All | Identify individual customers. |
-| email | All | Customer contact information. |
-| phone | Blinkit, Instamart | Customer contact information. |
-| gender | Zepto | Customer demographic analysis. |
-| age | Zepto | Customer demographic analysis. |
-| city | Zepto | Geographic customer analysis. |
-| state | Zepto | Geographic customer analysis. |
-| area | Blinkit | Hyperlocal customer analysis. |
-| pincode | Blinkit | Bangalore pincode-wise customer analysis. |
-| registration_date | All | Analyze customer acquisition trends. |
-| customer_segment | Blinkit, Instamart | Customer segmentation analysis. |
+### Final Analytical Schema
 
+| Final Column | Data Type | Business Purpose |
+|--------------|-----------|------------------|
+| platform | string | Identify the source platform for customer analysis. |
+| customer_id | string | Identify a customer record within the respective platform. |
+| customer_city | string | Geographic customer analysis. |
+| customer_state | string | Geographic customer analysis. |
+| customer_pincode | Int64 | Pincode-level customer analysis. |
+| customer_registration_date | datetime64[ns] | Analyze customer registration trends. |
+| customer_segment | string | Customer segmentation analysis. |
 
-### Source-to-Target Mapping
+---
 
-| Final Column | Blinkit | Zepto | Instamart | Transformation |
-|---------------|----------|--------|------------|----------------|
+### Source → Target Transformation
+
+| Final Column | Blinkit | Zepto | Swiggy | ETL Action |
+|--------------|----------|-------|--------|------------|
 | platform | ❌ | ❌ | ❌ | Add platform name during ETL |
-| customer_id | customer_id | customer_id | CustomerID | Rename |
-| customer_name | customer_name | customer_name | CustomerName | Rename |
-| email | email | email | Email | Rename |
-| phone | phone | NULL | phone | Rename |
-| gender | NULL | gender | NULL | Keep NULL where unavailable |
-| age | NULL | age | NULL | Keep NULL where unavailable |
-| city | NULL | city | NULL | Keep NULL where unavailable |
-| state | NULL | state | NULL | Keep NULL where unavailable |
-| area | area | NULL | NULL | Keep NULL where unavailable |
-| pincode | pincode | NULL | NULL | Keep NULL where unavailable |
-| registration_date | registration_date | created_date | RegistrationDate | Rename + Convert to datetime |
-| customer_segment | customer_segment | NULL | CustomerSegment | Rename |
+| customer_id | customer_id | customer_id | CustomerID | Rename where required + standardize |
+| customer_city | customer_address | city | city | Blinkit: derive city from address; Zepto/Swiggy: rename |
+| customer_state | customer_state | state | state | Rename/standardize; NULL where unavailable |
+| customer_pincode | pincode | NULL |Pincode| Rename; keep NULL where unavailable |
+| customer_registration_date | registration_date | created_date | RegistrationDate | Rename + convert to date datatype |
+| customer_segment | customer_segment | NULL | CustomerSegment | Rename + standardize values |
 
+---
 
-### Gap Analysis
+#### City Transformation
 
-| Missing Information | Platform | Decision |
-|---------------------|----------|----------|
-| Phone | Zepto | Store NULL |
-| Gender | Blinkit, Instamart | Store NULL |
-| Age | Blinkit, Instamart | Store NULL |
-| City | Blinkit, Instamart | Store NULL |
-| State | Blinkit, Instamart | Store NULL |
-| Area | Zepto, Instamart | Store NULL |
-| Pincode | Zepto, Instamart | Store NULL |
-| Customer Segment | Zepto | Store NULL |
+The city is derived from `customer_address` using the address structure:
 
+- Identify the last address separator (comma or newline).
+- Extract the city appearing before the final 6-digit pincode.
+- Clean leading/trailing spaces.
 
-### Final Decision
+#### Customer Segment Standardization
 
-- One row represents one unique customer.
-- Customer information from all platforms will be standardized into a single analytical Customers table.
-- Derived attributes such as **Total Orders** and **Average Order Value** will not be stored because they can be calculated from the Orders table.
-- Missing attributes will be stored as NULL where the source platform does not provide them.
-- **Status:** ✅ Frozen (Version 1)
+Customer segment values from different platforms are standardized into common analytical values.
+
+| Source Value | Standard Value |
+|--------------|----------------|
+| Premium | High Value |
+| Regular | Frequent Shopper |
+| New | New User |
+| Lapsed | Inactive |
+
+#### Other
+
+- The final customer table contains only the seven standardized analytical columns.
+- Platform information is added during ETL.
+- Blinkit city is derived from `customer_address`.
+- Common text cleaning is performed after platform-level data is prepared and concatenated.
+- Customer segment values are standardized after concatenation.
+- Missing attributes are preserved as NULL where the source platform does not provide them.
+- Customer registration date is converted to datetime because the source contains date information without a time component.
+- No customer-level derived metrics are stored in this table.
 
 ---
 
