@@ -8,7 +8,7 @@ ORDERS_FILE = "clean_orders.csv"
 CUSTOMERS_FILE = "clean_customers.csv"
 PRODUCTS_FILE = "clean_products.csv"
 DELIVERIES_FILE = "clean_deliveries.csv"
-TRANSACTIONS_FILE = "clean_transactions.csv"
+RATING_FILE = "clean_ratings.csv"
 
 
 # Data Folder
