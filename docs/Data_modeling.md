@@ -373,13 +373,13 @@ Final Schema
 
 ###  Source-to-Target Mapping
 
-| Final Column | Blinkit | Zepto | Instamart | Transformation |
-|---|---|---|
-| `platform` |❌ | ❌ | ❌ | Add platform name during ETL |
-| `rating_id` | feedback ID | rating_id | NA | Rename to `rating_id` and store as string. |
-| `order_id` | order_id | order_id | NA |  store as string. |
-| `rating` | rating_id| feedback_id| NA| Convert string and Rename |
-| `feedback` | review| feedback text | NA|  Rename to `feedback` |
+| Final Column | Blinkit    | Zepto      | Instamart | Transformation |
+|--------------|----------- |------------|-----------|-----------------|
+| `platform`   |   ❌       | ❌        | ❌  | Add platform name during ETL |
+| `rating_id`  | feedback ID| rating_id  | NA | Rename to `rating_id` and store as string. |
+| `order_id`   | order_id   | order_id   | NA |  store as string. |
+| `rating`     | rating_id  | feedback_id| NA| Convert string and Rename |
+| `feedback`   | review     | feedback text | NA|  Rename to `feedback` .|
 
 ###  Gap Analysis
 
