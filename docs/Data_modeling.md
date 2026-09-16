@@ -357,47 +357,36 @@ Customer segment values from different platforms are standardized into common an
 
 ---
 
-# Reviews
+## Rating 
 
 ### Final Analytical Table
 
-| Final Column | Source Platform | Business Purpose |
-|---------------|----------------|------------------|
-| platform | All | Identify the source platform for customer review analysis. |
-| review_id | Blinkit, Zepto | Unique identifier for each review. |
-| order_id | Blinkit, Zepto | Link reviews to the Orders table. |
-| customer_id | Blinkit | Link reviews to the Customers table. |
-| rating | Blinkit, Zepto | Measure customer satisfaction. |
-| review_text | Blinkit, Zepto | Perform customer sentiment and text analysis. |
-| feedback_category | Blinkit | Categorize customer issues and compliments. |
-| sentiment | Blinkit | Analyze positive, neutral, and negative customer feedback. |
-| review_date | Blinkit | Analyze review trends over time. |
+Final Schema
 
+| Column Name | Data Type | Description |
+|---|---|---|
+| `platform` | string | Name of the platform the rating belongs to. |
+| `rating_id` | string | Unique identifier for the rating record, where available. |
+| `order_id` | string | Identifier of the order associated with the rating, where available. |
+| `rating` | float | Numeric customer rating. |
+| `feedback` | string | Written customer feedback, where available. |
 
-### Source-to-Target Mapping
+###  Source-to-Target Mapping
 
 | Final Column | Blinkit | Zepto | Instamart | Transformation |
-|---------------|----------|--------|------------|----------------|
-| platform | ❌ | ❌ | ❌ | Add platform name during ETL |
-| review_id | feedback_id | rating_id | NULL | Rename |
-| order_id | order_id | order_id | NULL | Rename |
-| customer_id | customer_id | NULL | NULL | Keep NULL where unavailable |
-| rating | rating | rating | NULL | Rename |
-| review_text | feedback_text | review | NULL | Rename |
-| feedback_category | feedback_category | NULL | NULL | Rename |
-| sentiment | sentiment | NULL | NULL | Rename |
-| review_date | feedback_date | NULL | NULL | Rename + Convert to datetime |
+|---|---|---|
+| `platform` |❌ | ❌ | ❌ | Add platform name during ETL |
+| `rating_id` | feedback ID | rating_id | NA | Rename to `rating_id` and store as string. |
+| `order_id` | order_id | order_id | NA |  store as string. |
+| `rating` | rating_id| feedback_id| NA| Convert string and Rename |
+| `feedback` | review| feedback text | NA|  Rename to `feedback` |
 
+###  Gap Analysis
 
-### Gap Analysis
-
-| Missing Information | Platform | Decision |
-|---------------------|----------|----------|
-| Customer ID | Zepto | Store NULL |
-| Feedback Category | Zepto, Instamart | Store NULL |
-| Sentiment | Zepto, Instamart | Store NULL |
-| Review Date | Zepto, Instamart | Store NULL |
-| Complete Review Dataset | Instamart | Store NULL |
+- Only platforms with available rating data are included.
+- Missing source fields are not invented.
+- Missing values are retained as nulls where applicable.
+- The final table contains only the five agreed columns.
 
 
 ###  Final Decision
@@ -406,4 +395,3 @@ Customer segment values from different platforms are standardized into common an
 - Reviews from Blinkit and Zepto will be standardized into a single analytical Reviews table.
 - Instamart does not provide customer review data, therefore review-related fields will remain NULL.
 - Missing attributes will be stored as NULL where unavailable.
-- **Status:** ✅ Frozen (Version 1)
