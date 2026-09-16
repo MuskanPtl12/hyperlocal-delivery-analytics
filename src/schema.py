@@ -56,3 +56,23 @@ DELIVERY_FINAL_COLUMNS = [
     "delay_reason"
 
 ]
+
+
+CUSTOMER_FINAL_COLUMNS = [
+    
+    "platform",
+    "customer_id",
+    "customer_city",
+    "customer_state",
+    "customer_pincode",
+    "customer_registration_date",
+    "customer_segment"
+]
+
+RATING_FINAL_COLUMNS = [
+    "platform", 
+    "rating_id",
+    "order_id",
+    "rating", 
+    "feedback" ]
+
